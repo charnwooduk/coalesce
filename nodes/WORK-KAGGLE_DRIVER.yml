@@ -1,0 +1,154 @@
+steps:
+  KAGGLE_DRIVER-d663d018-5c05-4b77-b3fa-9b5b72ef18e3:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: WORK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6e694661-a10e-4e3b-bac1-7741590a487f
+              stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DRIVERID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a097dfdf-41c6-4298-b714-7425e4f18ce0
+              stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DRIVERREF
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a111f2d0-f289-4981-b1e3-234cc154bd86
+              stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: NUMBER
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: fb18ac1c-2375-4766-836b-e7b779a670af
+              stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: CODE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6fe94464-dfba-455d-831b-02eb58f23d3a
+              stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: FORENAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 935398c5-cc8f-4b3a-a20f-5fe2ac1fd237
+              stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: SURNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 132e43e8-3d56-4c20-8472-beee83f32fa1
+              stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DOB
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f4b9b7c6-30a3-47b9-8725-b25e6b718206
+              stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: NATIONALITY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 233a27bd-8348-447c-90f1-fbccd159967c
+              stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: URL
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('WORK', 'KAGGLE_DRIVER') }}
+      name: KAGGLE_DRIVER
+      schema: ""
+      sqlType: Source
+      table: KAGGLE_DRIVER
+      type: sourceInput
+    stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3

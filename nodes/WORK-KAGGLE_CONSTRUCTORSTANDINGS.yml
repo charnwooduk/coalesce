@@ -1,0 +1,124 @@
+steps:
+  KAGGLE_CONSTRUCTORSTANDINGS-00705315-4566-4617-97d6-de4d5cacc0d6:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: WORK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 09852a09-4b84-41ed-a5bf-cfb2fdfba2ab
+              stepCounter: 00705315-4566-4617-97d6-de4d5cacc0d6
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: CONSTRUCTORSTANDINGSID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 31d98e14-bfc3-4e81-9a1d-635918cee529
+              stepCounter: 00705315-4566-4617-97d6-de4d5cacc0d6
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: RACEID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3889cb1e-6f99-4997-b3d8-2b4d55bf1e0e
+              stepCounter: 00705315-4566-4617-97d6-de4d5cacc0d6
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: CONSTRUCTORID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 872311d9-07d2-4516-a255-2454273de89a
+              stepCounter: 00705315-4566-4617-97d6-de4d5cacc0d6
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: POINTS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 105c62b8-23b6-43ee-bcf6-3fd7c832b963
+              stepCounter: 00705315-4566-4617-97d6-de4d5cacc0d6
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: POSITION
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 87ee6ca9-f65b-47d9-ae53-784418cc1e0c
+              stepCounter: 00705315-4566-4617-97d6-de4d5cacc0d6
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: POSITIONTEXT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: bdcc4133-94fb-4d2f-bd94-b211628254b4
+              stepCounter: 00705315-4566-4617-97d6-de4d5cacc0d6
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: WINS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('WORK', 'KAGGLE_CONSTRUCTORSTANDINGS') }}
+      name: KAGGLE_CONSTRUCTORSTANDINGS
+      schema: ""
+      sqlType: Source
+      table: KAGGLE_CONSTRUCTORSTANDINGS
+      type: sourceInput
+    stepCounter: 00705315-4566-4617-97d6-de4d5cacc0d6

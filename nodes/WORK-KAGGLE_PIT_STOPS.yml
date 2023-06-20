@@ -1,0 +1,124 @@
+steps:
+  KAGGLE_PIT_STOPS-c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: WORK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9fa2547f-8cc4-4853-a721-c01969603fa4
+              stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: RACEID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 08fe378a-3dd5-43fc-8503-09068468e299
+              stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DRIVERID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0319b113-29a2-4bdb-9319-d52214f1bb77
+              stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: STOP
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4240d01c-30e6-4f6a-a51d-3757079de114
+              stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: LAP
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e02c448c-939e-4a63-a137-597c0f870209
+              stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: PIT_STOP_TIME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e1d3ccda-2165-435d-a486-584eadd516cc
+              stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DURATION
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 188ed5ac-3659-4f40-bb29-041eb9d9ff00
+              stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: MILLISECONDS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('WORK', 'KAGGLE_PIT_STOPS') }}
+      name: KAGGLE_PIT_STOPS
+      schema: ""
+      sqlType: Source
+      table: KAGGLE_PIT_STOPS
+      type: sourceInput
+    stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4

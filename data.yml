@@ -440,9 +440,7 @@ macros:
 
 
 packages: {}
-projects:
-  "1":
-    name: SCALEFREE-DATAVAULT4COALESCE
+projects: {}
 stepTypes:
   StepType-12:
     id: "12"

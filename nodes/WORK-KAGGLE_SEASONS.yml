@@ -1,0 +1,49 @@
+steps:
+  KAGGLE_SEASONS-95feb567-345b-42fb-be58-f765de844cb8:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: WORK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c1c633d5-376d-4d10-8df7-baa9f906beab
+              stepCounter: 95feb567-345b-42fb-be58-f765de844cb8
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: SEASON_YEAR
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: fb593eeb-caa5-4548-85df-66e55cb44d15
+              stepCounter: 95feb567-345b-42fb-be58-f765de844cb8
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: URL
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('WORK', 'KAGGLE_SEASONS') }}
+      name: KAGGLE_SEASONS
+      schema: ""
+      sqlType: Source
+      table: KAGGLE_SEASONS
+      type: sourceInput
+    stepCounter: 95feb567-345b-42fb-be58-f765de844cb8

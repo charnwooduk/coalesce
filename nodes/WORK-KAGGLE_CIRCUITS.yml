@@ -1,0 +1,154 @@
+steps:
+  KAGGLE_CIRCUITS-736d17cf-c835-420e-ba60-7788ad012e40:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: WORK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c266444b-6d31-4ed1-9519-ecf8be2f4126
+              stepCounter: 736d17cf-c835-420e-ba60-7788ad012e40
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: CIRCUITID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d97c2702-c9bf-4987-864a-669545093110
+              stepCounter: 736d17cf-c835-420e-ba60-7788ad012e40
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: CIRCUITREF
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c1103c8f-3b06-455f-9874-df0ab1a5b36a
+              stepCounter: 736d17cf-c835-420e-ba60-7788ad012e40
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b491cda7-462c-4e84-a991-a3cadab47c0f
+              stepCounter: 736d17cf-c835-420e-ba60-7788ad012e40
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: LOCATION
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 493efafd-ceee-4b3d-8a41-29d7db306786
+              stepCounter: 736d17cf-c835-420e-ba60-7788ad012e40
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: COUNTRY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a5f179b3-4997-47b0-a912-3ec2e8cfbd8d
+              stepCounter: 736d17cf-c835-420e-ba60-7788ad012e40
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: LAT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ea89b450-1b2d-429b-9586-dc34634ee277
+              stepCounter: 736d17cf-c835-420e-ba60-7788ad012e40
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: LNG
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e911a050-697d-4b07-9b9d-52a650c6c95f
+              stepCounter: 736d17cf-c835-420e-ba60-7788ad012e40
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: ALT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e2861e5a-147c-4ae3-9246-4302cec2ae1c
+              stepCounter: 736d17cf-c835-420e-ba60-7788ad012e40
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: URL
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('WORK', 'KAGGLE_CIRCUITS') }}
+      name: KAGGLE_CIRCUITS
+      schema: ""
+      sqlType: Source
+      table: KAGGLE_CIRCUITS
+      type: sourceInput
+    stepCounter: 736d17cf-c835-420e-ba60-7788ad012e40

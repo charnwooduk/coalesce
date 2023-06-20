@@ -1,0 +1,94 @@
+steps:
+  KAGGLE_CONSTRUCTORRESULTS-95be5e4e-c89a-46b9-ac4b-13543f5eb1d3:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: WORK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f9679572-07af-42be-a2c4-05c1a45aa7ae
+              stepCounter: 95be5e4e-c89a-46b9-ac4b-13543f5eb1d3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: CONSTRUCTORRESULTSID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9d7fe709-90c6-47dd-929e-4d92b13bd734
+              stepCounter: 95be5e4e-c89a-46b9-ac4b-13543f5eb1d3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: RACEID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 90f44dd7-a416-4ea9-b223-7434b63049b4
+              stepCounter: 95be5e4e-c89a-46b9-ac4b-13543f5eb1d3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: CONSTRUCTORID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 050ec1b2-1e2d-4dd5-b324-5e5299c33cc8
+              stepCounter: 95be5e4e-c89a-46b9-ac4b-13543f5eb1d3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: POINTS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a26fc60b-c13a-4d2d-b3e4-7877ea0570d2
+              stepCounter: 95be5e4e-c89a-46b9-ac4b-13543f5eb1d3
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: STATUS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('WORK', 'KAGGLE_CONSTRUCTORRESULTS') }}
+      name: KAGGLE_CONSTRUCTORRESULTS
+      schema: ""
+      sqlType: Source
+      table: KAGGLE_CONSTRUCTORRESULTS
+      type: sourceInput
+    stepCounter: 95be5e4e-c89a-46b9-ac4b-13543f5eb1d3

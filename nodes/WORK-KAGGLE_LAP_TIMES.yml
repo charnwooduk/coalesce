@@ -1,0 +1,109 @@
+steps:
+  KAGGLE_LAP_TIMES-c6834af1-e204-4df4-ab70-36d3bf5661ff:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: WORK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 22bbc6b7-1eec-4f41-9fb3-3527ebf65bb4
+              stepCounter: c6834af1-e204-4df4-ab70-36d3bf5661ff
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: RACEID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: dc1601e1-7891-4115-a9ea-aea34189dd16
+              stepCounter: c6834af1-e204-4df4-ab70-36d3bf5661ff
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DRIVERID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 197c4c40-dcf8-4f8d-b886-9c3052f30cc6
+              stepCounter: c6834af1-e204-4df4-ab70-36d3bf5661ff
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: LAP
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f74d2975-a891-4ff1-86c7-fb04c9faf601
+              stepCounter: c6834af1-e204-4df4-ab70-36d3bf5661ff
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: POSITION
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 94ff310c-3369-4f2f-8be3-315ba1daf977
+              stepCounter: c6834af1-e204-4df4-ab70-36d3bf5661ff
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: LAP_TIME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d0609d39-f055-4691-a16e-e05a117af989
+              stepCounter: c6834af1-e204-4df4-ab70-36d3bf5661ff
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: MILLISECONDS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('WORK', 'KAGGLE_LAP_TIMES') }}
+      name: KAGGLE_LAP_TIMES
+      schema: ""
+      sqlType: Source
+      table: KAGGLE_LAP_TIMES
+      type: sourceInput
+    stepCounter: c6834af1-e204-4df4-ab70-36d3bf5661ff

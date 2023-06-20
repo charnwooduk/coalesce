@@ -1,0 +1,154 @@
+steps:
+  KAGGLE_QUALIFYING-c1da2b91-6cb6-4452-af92-49b9872674d4:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: WORK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d0f568a9-ecaa-4042-8adc-7754569999e5
+              stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: QUALIFYID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ea9618c1-66ac-4e7d-81f6-bfe6622aba6d
+              stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: RACEID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3ca30d6a-74c9-426a-98aa-1d1f19fd9006
+              stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DRIVERID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5dcda8e4-a9bd-4e44-9e11-95715578bd7e
+              stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: CONSTRUCTORID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 016152a8-c977-4dd1-9e61-225bc9426b8c
+              stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: NUMBER
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c3d12a44-8f6d-46e5-ab04-d247c79ede94
+              stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: POSITION
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6a050da0-0e85-449d-871c-40e14292b828
+              stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: Q1
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 65b31183-20f5-4366-a6ce-434d97285fd1
+              stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: Q2
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 62bde608-3f39-45d1-a4a3-b40688e5f169
+              stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: Q3
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('WORK', 'KAGGLE_QUALIFYING') }}
+      name: KAGGLE_QUALIFYING
+      schema: ""
+      sqlType: Source
+      table: KAGGLE_QUALIFYING
+      type: sourceInput
+    stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4

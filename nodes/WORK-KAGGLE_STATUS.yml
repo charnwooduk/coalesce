@@ -1,0 +1,49 @@
+steps:
+  KAGGLE_STATUS-d8a4294c-1c5c-4491-94c7-1a51621be591:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: WORK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 535f4d9c-c2b3-49fa-976e-cbeac5f3dd88
+              stepCounter: d8a4294c-1c5c-4491-94c7-1a51621be591
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: STATUSID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5e410b24-12e8-45d6-8ebe-96a726460c37
+              stepCounter: d8a4294c-1c5c-4491-94c7-1a51621be591
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: STATUS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('WORK', 'KAGGLE_STATUS') }}
+      name: KAGGLE_STATUS
+      schema: ""
+      sqlType: Source
+      table: KAGGLE_STATUS
+      type: sourceInput
+    stepCounter: d8a4294c-1c5c-4491-94c7-1a51621be591

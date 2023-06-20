@@ -1,0 +1,124 @@
+steps:
+  KAGGLE_DRIVERSTANDINGS-c09f5a78-7e76-43d3-a0ec-f69304029cea:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: WORK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 23cf23fa-bb02-43c0-bcac-abe69034d6fc
+              stepCounter: c09f5a78-7e76-43d3-a0ec-f69304029cea
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DRIVERSTANDINGSID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ec5e77cd-d1dd-4d8e-9810-54d1b26892e6
+              stepCounter: c09f5a78-7e76-43d3-a0ec-f69304029cea
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: RACEID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d01d6b01-880e-42f5-9c35-e80e423955ba
+              stepCounter: c09f5a78-7e76-43d3-a0ec-f69304029cea
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DRIVERID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4d42a4e4-33e4-42c1-aa7d-1adb5171a5c1
+              stepCounter: c09f5a78-7e76-43d3-a0ec-f69304029cea
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: POINTS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d858ee65-1308-4414-a801-4a4c68b73479
+              stepCounter: c09f5a78-7e76-43d3-a0ec-f69304029cea
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: POSITION
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f75170a9-0c80-4df7-ab80-7be0811820d6
+              stepCounter: c09f5a78-7e76-43d3-a0ec-f69304029cea
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: POSITIONTEXT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6d8deb1f-7919-47cc-a37b-31b65a8279c4
+              stepCounter: c09f5a78-7e76-43d3-a0ec-f69304029cea
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: WINS7
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('WORK', 'KAGGLE_DRIVERSTANDINGS') }}
+      name: KAGGLE_DRIVERSTANDINGS
+      schema: ""
+      sqlType: Source
+      table: KAGGLE_DRIVERSTANDINGS
+      type: sourceInput
+    stepCounter: c09f5a78-7e76-43d3-a0ec-f69304029cea
