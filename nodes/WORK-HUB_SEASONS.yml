@@ -1,0 +1,92 @@
+steps:
+  HUB_SEASONS-7d240fb4-a314-4e34-b7fc-144b9b66f0f0:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: WORK
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 24cea957-dd05-4419-a0a3-4d14e6339acc
+              stepCounter: 7d240fb4-a314-4e34-b7fc-144b9b66f0f0
+            config:
+              is_Hub_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_SEASON_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ab3924a5-c870-4104-a12b-4f49a093b69b
+                    stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+                transform: ""
+          - columnReference:
+              columnCounter: 769491e6-e795-454a-a545-c78b9870bf1b
+              stepCounter: 7d240fb4-a314-4e34-b7fc-144b9b66f0f0
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SEASON_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c57fa0c3-8338-4cfe-9d03-9afd985633ed
+                    stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+                transform: ""
+          - columnReference:
+              columnCounter: b16c00c5-9dd6-4a30-a058-c732a8783a03
+              stepCounter: 7d240fb4-a314-4e34-b7fc-144b9b66f0f0
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: cda25b94-62a3-4ccf-b7be-af5f4f19a308
+                    stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+                transform: ""
+          - columnReference:
+              columnCounter: 33634b0d-5355-4d90-9e7c-426f09850943
+              stepCounter: 7d240fb4-a314-4e34-b7fc-144b9b66f0f0
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3b03e0e0-4a11-4821-813d-f73df3278673
+                    stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_SEASONS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_SEASONS') }} "DVSTG_SEASONS"
+            name: HUB_SEASONS
+            noLinkRefs: []
+      name: HUB_SEASONS
+      overrideSQL: false
+      schema: ""
+      sqlType: "6"
+      type: sql
+    stepCounter: 7d240fb4-a314-4e34-b7fc-144b9b66f0f0

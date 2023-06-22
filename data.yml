@@ -1,7 +1,11 @@
 defaultStorageMapping: WORK
 jobs: {}
 locations:
+  DATAVAULT:
+    mappingDefinitions: {}
   SAMPLE:
+    mappingDefinitions: {}
+  STAR:
     mappingDefinitions: {}
   WORK:
     mappingDefinitions: {}

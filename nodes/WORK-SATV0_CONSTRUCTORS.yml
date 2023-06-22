@@ -1,0 +1,136 @@
+steps:
+  SATV0_CONSTRUCTORS-596c66dc-1058-4dd1-9576-d7263b0f7b55:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: WORK
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 212eb418-b941-4a09-a0c0-701bbb93f2ab
+              stepCounter: 596c66dc-1058-4dd1-9576-d7263b0f7b55
+            config:
+              is_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_CONSTRUCTOR_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: fe3b400b-a3ea-4a91-9170-20e45bb21f40
+                    stepCounter: aa90cc1e-09a6-4f89-b5b0-0701944ac18d
+                transform: ""
+          - columnReference:
+              columnCounter: a32bfa2a-a4cf-4619-99e3-f6b82978637c
+              stepCounter: 596c66dc-1058-4dd1-9576-d7263b0f7b55
+            config:
+              is_hd: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_CONSTRUCTOR_N_S
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 079d995d-f580-48a7-b301-f016b2a38fa9
+                    stepCounter: aa90cc1e-09a6-4f89-b5b0-0701944ac18d
+                transform: ""
+          - columnReference:
+              columnCounter: 3c34bda8-b3b6-41b3-b4cb-59f03296d077
+              stepCounter: 596c66dc-1058-4dd1-9576-d7263b0f7b55
+            dataType: VARCHAR(100)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NATIONALITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 417eb574-9262-422c-970b-4e7ff2899a72
+                    stepCounter: aa90cc1e-09a6-4f89-b5b0-0701944ac18d
+                transform: ""
+          - columnReference:
+              columnCounter: 99472ebe-65c2-4234-8505-52eda83d6814
+              stepCounter: 596c66dc-1058-4dd1-9576-d7263b0f7b55
+            dataType: VARCHAR(200)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: URL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7e57a1c8-d796-454e-9b90-be2d59a8ce02
+                    stepCounter: aa90cc1e-09a6-4f89-b5b0-0701944ac18d
+                transform: ""
+          - columnReference:
+              columnCounter: 628853c8-fed6-4661-bb54-7f40b810aede
+              stepCounter: 596c66dc-1058-4dd1-9576-d7263b0f7b55
+            dataType: VARCHAR(100)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9d8d74dc-367c-40ce-97b4-0f8523384ee1
+                    stepCounter: aa90cc1e-09a6-4f89-b5b0-0701944ac18d
+                transform: ""
+          - columnReference:
+              columnCounter: 87225a97-5a97-4f11-8fd5-88436e4fd249
+              stepCounter: 596c66dc-1058-4dd1-9576-d7263b0f7b55
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3330aa3e-705d-45e3-a4de-ad67fe59b365
+                    stepCounter: aa90cc1e-09a6-4f89-b5b0-0701944ac18d
+                transform: ""
+          - columnReference:
+              columnCounter: 4474cc9a-c540-4954-a504-3c117e6e9715
+              stepCounter: 596c66dc-1058-4dd1-9576-d7263b0f7b55
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5290715a-cea2-443f-bf2e-dfcd22b91714
+                    stepCounter: aa90cc1e-09a6-4f89-b5b0-0701944ac18d
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_CONSTRUCTORS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_CONSTRUCTORS') }} "DVSTG_CONSTRUCTORS"
+            name: SATV0_CONSTRUCTORS
+            noLinkRefs: []
+      name: SATV0_CONSTRUCTORS
+      overrideSQL: false
+      schema: ""
+      sqlType: "8"
+      type: sql
+    stepCounter: 596c66dc-1058-4dd1-9576-d7263b0f7b55

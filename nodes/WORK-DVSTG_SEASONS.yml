@@ -1,0 +1,132 @@
+steps:
+  DVSTG_SEASONS-4128fb5c-e4a5-4f2d-bfd3-091266481793:
+    operation:
+      config:
+        generate_ghost_records: true
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: WORK
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ab3924a5-c870-4104-a12b-4f49a093b69b
+              stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: c57fa0c3-8338-4cfe-9d03-9afd985633ed
+                stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+            name: HK_SEASON_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d08c7f9c-9970-4aa2-a4cd-c9475745e95e
+              stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: c4338796-4274-4117-a9c0-ac3810c41467
+                stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+            name: HD_SEASON_N_S
+            nullable: true
+            sourceColumnReferences: []
+          - columnReference:
+              columnCounter: c57fa0c3-8338-4cfe-9d03-9afd985633ed
+              stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+            dataType: INT
+            description: ""
+            name: SEASON_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c1c633d5-376d-4d10-8df7-baa9f906beab
+                    stepCounter: 95feb567-345b-42fb-be58-f765de844cb8
+                transform: ""
+          - columnReference:
+              columnCounter: c4338796-4274-4117-a9c0-ac3810c41467
+              stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+            dataType: VARCHAR(200)
+            description: ""
+            name: URL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: fb593eeb-caa5-4548-85df-66e55cb44d15
+                    stepCounter: 95feb567-345b-42fb-be58-f765de844cb8
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cda25b94-62a3-4ccf-b7be-af5f4f19a308
+              stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            is_system_ldts: true
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: SYSDATE()
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3b03e0e0-4a11-4821-813d-f73df3278673
+              stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: The Record Source (RSRC) describes the source of this data.
+            is_system_rsrc: true
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "{{record_source()}}"
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: KAGGLE_SEASONS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'KAGGLE_SEASONS') }} "KAGGLE_SEASONS"
+            name: DVSTG_SEASONS
+            noLinkRefs: []
+      name: DVSTG_SEASONS
+      overrideSQL: false
+      schema: ""
+      sqlType: "4"
+      type: sql
+    stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793

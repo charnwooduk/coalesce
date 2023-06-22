@@ -1,0 +1,106 @@
+steps:
+  LINK_CONSTRUCTORSTANDINGS-cdfc71ef-8641-438a-ab08-85ef1f50accf:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: WORK
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 935cd6a6-29d6-4a1c-8eca-415ba6910334
+              stepCounter: cdfc71ef-8641-438a-ab08-85ef1f50accf
+            config:
+              is_Link_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_CONSTRUCTOR_STANDINGS_L
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3d137736-a662-42f3-aeb6-38dfffda6ee3
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+          - columnReference:
+              columnCounter: e9d7696b-f17f-4e44-bc77-f28ffaa7022a
+              stepCounter: cdfc71ef-8641-438a-ab08-85ef1f50accf
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_RACE_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6147dcff-33ee-4614-aab4-feb575480ba6
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+          - columnReference:
+              columnCounter: 7d5592ea-a669-44ac-bf72-eb1ec9474e90
+              stepCounter: cdfc71ef-8641-438a-ab08-85ef1f50accf
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_CONSTRUCTOR_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 798a0722-f31c-41e2-9c56-00a646b09faf
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+          - columnReference:
+              columnCounter: b0e3786b-b86d-4264-b922-ee206a7ae8a7
+              stepCounter: cdfc71ef-8641-438a-ab08-85ef1f50accf
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 43d4c8ee-ee73-4f7c-a77e-7a4ffb762e80
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+          - columnReference:
+              columnCounter: 8bb7de4c-6cf0-48a4-a021-4de97330e041
+              stepCounter: cdfc71ef-8641-438a-ab08-85ef1f50accf
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f9af3bb5-27a7-4c6d-b01f-63a2f04a52a5
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_KAGGLE_CONSTRUCTORSTANDINGS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_KAGGLE_CONSTRUCTORSTANDINGS') }} "DVSTG_KAGGLE_CONSTRUCTORSTANDINGS"
+            name: LINK_CONSTRUCTORSTANDINGS
+            noLinkRefs: []
+      name: LINK_CONSTRUCTORSTANDINGS
+      overrideSQL: false
+      schema: ""
+      sqlType: "7"
+      type: sql
+    stepCounter: cdfc71ef-8641-438a-ab08-85ef1f50accf
