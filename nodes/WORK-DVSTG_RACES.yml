@@ -394,15 +394,15 @@ steps:
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              KAGGLE_CIRCUITS: 736d17cf-c835-420e-ba60-7788ad012e40
               KAGGLE_RACES: ba82fb32-85b1-4bf2-8ef5-f172c2b54d45
+              KAGGLE_CIRCUITS: 736d17cf-c835-420e-ba60-7788ad012e40
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: WORK
-                nodeName: KAGGLE_CIRCUITS
-              - locationName: WORK
                 nodeName: KAGGLE_RACES
+              - locationName: WORK
+                nodeName: KAGGLE_CIRCUITS
             join:
               joinCondition: |-
                 FROM {{ ref('WORK', 'KAGGLE_RACES') }} "KAGGLE_RACES"
