@@ -1,0 +1,106 @@
+steps:
+  HUB_RACES-1ad6091d-e55c-40ff-a535-7dbeba1367cf:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: f4a1532c-1091-4bc7-95a5-8b483259e17f
+              stepCounter: 1ad6091d-e55c-40ff-a535-7dbeba1367cf
+            config:
+              is_Hub_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_RACE_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: dfe6c2a1-8f8b-4ab3-8954-7ce052238649
+                    stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
+                transform: ""
+          - columnReference:
+              columnCounter: 04b330a9-5784-414d-9168-516a9a74bc84
+              stepCounter: 1ad6091d-e55c-40ff-a535-7dbeba1367cf
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RACE_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a7674f3d-8ec5-4d2c-83d7-dc47091ca23a
+                    stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
+                transform: ""
+          - columnReference:
+              columnCounter: 415312aa-608f-475f-8fb7-980ff6e3e802
+              stepCounter: 1ad6091d-e55c-40ff-a535-7dbeba1367cf
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ROUND
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 75cde7d2-16dd-4ebd-b454-8e1eb21c3adf
+                    stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
+                transform: ""
+          - columnReference:
+              columnCounter: 3a02eff0-66fb-4f1b-b19b-6199fbc0c6fe
+              stepCounter: 1ad6091d-e55c-40ff-a535-7dbeba1367cf
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e640501c-6e79-47fe-8ae8-fa052560ebe5
+                    stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
+                transform: ""
+          - columnReference:
+              columnCounter: 1de69f97-38c9-4995-91c5-03534b5d79b3
+              stepCounter: 1ad6091d-e55c-40ff-a535-7dbeba1367cf
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c1e0f067-3d9f-4dcb-90ce-c661714d0af6
+                    stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_RACES
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_RACES') }} "DVSTG_RACES"
+            name: HUB_RACES
+            noLinkRefs: []
+      name: HUB_RACES
+      overrideSQL: false
+      schema: ""
+      sqlType: "6"
+      type: sql
+    stepCounter: 1ad6091d-e55c-40ff-a535-7dbeba1367cf

@@ -1,5 +1,5 @@
 steps:
-  DVSTG_KAGGLE_CONSTRUCTORSTANDINGS-1f7739f9-5959-4562-92a6-01527097f9ed:
+  DVSTG_CONSTRUCTOR_RACE-1f7739f9-5959-4562-92a6-01527097f9ed:
     operation:
       config:
         generate_ghost_records: true
@@ -44,6 +44,33 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
+              columnCounter: 2c0e074a-413d-4a0d-bd8b-408ec29f5371
+              stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: b75a18c6-f6a1-40b1-bd20-84ba36482909
+                stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+              - columnCounter: 1627e35b-3e7a-4ede-aa37-ecce4705830e
+                stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+              - columnCounter: 76a5c273-f99f-40d6-8530-a24738d1aa38
+                stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+              - columnCounter: f72c1b22-798d-4068-9333-f2e182f5be7e
+                stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+              - columnCounter: 54c806c3-c3de-47c0-9f81-d3868d0340f9
+                stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+            name: HD_CONSTRUCTOR_STANDINGS_N_S
+            nullable: true
+            sourceColumnReferences: []
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
               columnCounter: 6147dcff-33ee-4614-aab4-feb575480ba6
               stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
             config: {}
@@ -83,27 +110,6 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 8bbd00af-354d-4873-a9be-f7be9bcae819
-              stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
-            config: {}
-            dataType: ""
-            defaultValue: ""
-            description: ""
-            keyColumnType: None
-            name: HD_CONSTRUCTORSTANDINGS_L_S
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: "0"
-                    stepCounter: "0"
-                transform: ""
-            systemColumnType: None
-            transform: ""
           - columnReference:
               columnCounter: a0dae828-c497-4deb-b8ac-2255cced2775
               stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
@@ -181,7 +187,7 @@ steps:
               stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
             dataType: NUMBER(4,1)
             description: ""
-            name: POINTS
+            name: TOTAL_POINTS
             nullable: true
             sourceColumnReferences:
               - columnReferences:
@@ -193,7 +199,7 @@ steps:
               stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
             dataType: INT
             description: ""
-            name: POSITION
+            name: CURRENT_POSITION
             nullable: true
             sourceColumnReferences:
               - columnReferences:
@@ -205,12 +211,36 @@ steps:
               stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
             dataType: INT
             description: ""
-            name: WINS
+            name: TOTAL_WINS
             nullable: true
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: bdcc4133-94fb-4d2f-bd94-b211628254b4
                     stepCounter: 00705315-4566-4617-97d6-de4d5cacc0d6
+                transform: ""
+          - columnReference:
+              columnCounter: f72c1b22-798d-4068-9333-f2e182f5be7e
+              stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+            dataType: NUMBER(3,1)
+            description: ""
+            name: RACE_POINTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 050ec1b2-1e2d-4dd5-b324-5e5299c33cc8
+                    stepCounter: 95be5e4e-c89a-46b9-ac4b-13543f5eb1d3
+                transform: ""
+          - columnReference:
+              columnCounter: 54c806c3-c3de-47c0-9f81-d3868d0340f9
+              stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+            dataType: VARCHAR(10)
+            description: ""
+            name: RACE_STATUS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a26fc60b-c13a-4d2d-b3e4-7877ea0570d2
+                    stepCounter: 95be5e4e-c89a-46b9-ac4b-13543f5eb1d3
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -246,35 +276,12 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: "{{record_source()}}"
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 2f633377-41c1-4a01-b472-3998207337c1
-              stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
-            config: {}
-            dataType: STRING
-            defaultValue: ""
-            description: ""
-            hashColumns: []
-            hashDetails:
-              hashAlgorithm: SHA1
-            hashedColumns:
-              - columnCounter: b75a18c6-f6a1-40b1-bd20-84ba36482909
-                stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
-              - columnCounter: 1627e35b-3e7a-4ede-aa37-ecce4705830e
-                stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
-              - columnCounter: 76a5c273-f99f-40d6-8530-a24738d1aa38
-                stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
-            name: GH
-            nullable: true
-            sourceColumnReferences: []
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
               KAGGLE_CONSTRUCTOR: 429b5942-8c50-4a75-b742-878a68c6a9e6
+              KAGGLE_CONSTRUCTORRESULTS: 95be5e4e-c89a-46b9-ac4b-13543f5eb1d3
               KAGGLE_CONSTRUCTORSTANDINGS: 00705315-4566-4617-97d6-de4d5cacc0d6
               KAGGLE_RACES: ba82fb32-85b1-4bf2-8ef5-f172c2b54d45
             customSQL:
@@ -282,6 +289,8 @@ steps:
             dependencies:
               - locationName: WORK
                 nodeName: KAGGLE_CONSTRUCTOR
+              - locationName: WORK
+                nodeName: KAGGLE_CONSTRUCTORRESULTS
               - locationName: WORK
                 nodeName: KAGGLE_CONSTRUCTORSTANDINGS
               - locationName: WORK
@@ -293,9 +302,11 @@ steps:
                 ON "KAGGLE_CONSTRUCTORSTANDINGS"."RACEID" = "KAGGLE_RACES"."RACEID"
                 INNER JOIN {{ ref('WORK', 'KAGGLE_CONSTRUCTOR') }} "KAGGLE_CONSTRUCTOR"
                 ON "KAGGLE_CONSTRUCTORSTANDINGS"."CONSTRUCTORID" = "KAGGLE_CONSTRUCTOR"."CONSTRUCTORID"
-            name: DVSTG_KAGGLE_CONSTRUCTORSTANDINGS
+                INNER JOIN {{ ref('WORK', 'KAGGLE_CONSTRUCTORRESULTS') }} "KAGGLE_CONSTRUCTORRESULTS"
+                ON "KAGGLE_CONSTRUCTORSTANDINGS"."RACEID" = "KAGGLE_CONSTRUCTORRESULTS"."RACEID"
+            name: DVSTG_CONSTRUCTOR_RACE
             noLinkRefs: []
-      name: DVSTG_KAGGLE_CONSTRUCTORSTANDINGS
+      name: DVSTG_CONSTRUCTOR_RACE
       overrideSQL: false
       schema: ""
       sqlType: "4"

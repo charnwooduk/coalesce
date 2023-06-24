@@ -1,0 +1,276 @@
+steps:
+  SATV0_RACE_RESULTS-69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 3da640ed-32df-46ed-8035-5759aaa115c3
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            config:
+              is_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_ALL_RESULTS_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 15b523f2-00d8-4451-9636-79fb2efd2390
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 6e21a529-f4a8-451f-948f-7d6a65f14ad1
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            config:
+              is_hd: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_RESULTS_N_S
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ed7f10a3-7212-448b-bcf9-9ad182668dfd
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 93551ae2-0ee3-4ecf-ac95-9d16a3743df4
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f44a54f9-7ca1-4415-9481-b3d21db44a39
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 5829979d-fcaa-4ab2-acd4-6fc3085a3a34
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: GRID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c2785241-7141-4ec4-8b29-1eb122e12809
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 6907161f-8f01-44ea-a7a1-86379f8e6d77
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POSITION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 48ac8f95-005d-4e16-a771-92f722156631
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: ac95ffde-1cce-46b0-b821-0dc6c1b93810
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POSITIONTEXT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: de7f9f32-03b5-4ade-b4ab-806a338da968
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: e42579b3-df94-429c-aa93-9e8ec42308d8
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POSITIONORDER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c08154a7-46b5-4792-aeb5-3de01075a534
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: a58fa5cc-6f32-4949-932f-47a1cd5b4b94
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: NUMERIC(3,1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POINTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c4bc4f7b-36c3-4c79-a9e3-5969275da278
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 5564d758-6196-4bab-a73a-baaa4bf60305
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAPS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9514ab4a-a13d-4b82-86c5-3883681948d8
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 0d84f119-5a74-43ec-bec8-e4445bc5eafb
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: varchar(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RESULT_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 67bb0b5d-b864-4692-8148-a8ef124b7cf0
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: f3ae536a-5d55-4394-83a5-b05d192946b8
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MILLISECONDS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 24a3af2b-286d-454a-a797-c1721e94e4be
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 91030231-7cf0-48a6-96f3-17feab6dacbc
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: varchar(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FASTESTLAP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 038b7944-5678-411d-8c73-ad80f093cff8
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 9357e59d-1f00-489a-b95c-6b32ffba29ed
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RANK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2320f1bb-963a-425d-8d8e-19e36c4822d6
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 06bf100a-a51a-41b3-adfb-2a1a0764a25e
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FASTESTLAPTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a2eb3dba-0d41-4886-abe5-08c1bed312de
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 7a16ed73-375c-4ed1-9f4f-bf6e820c91f8
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FASTESTLAPSPEED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 974bb5f0-cf05-4703-8dc6-ac409e3ff8c0
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: b28e6a12-27b1-4e49-8436-7941edf2bb38
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 95b2f776-dc2e-4f1e-9c8e-bf15f2c6f61a
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 92879c88-86b5-4d9e-b8a3-a6eb1f55ec92
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 29b34b46-b4dc-4ac3-a652-7ea260e8bb40
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_RESULTS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_RESULTS') }} "DVSTG_RESULTS"
+            name: SATV0_RACE_RESULTS
+            noLinkRefs: []
+      name: SATV0_RACE_RESULTS
+      overrideSQL: false
+      schema: ""
+      sqlType: "8"
+      type: sql
+    stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6

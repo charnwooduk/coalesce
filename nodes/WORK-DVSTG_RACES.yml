@@ -1,5 +1,5 @@
 steps:
-  DVSTG_KAGGLE_RACES-24b71c60-ca0f-4427-b8a2-731afdf7d46f:
+  DVSTG_RACES-24b71c60-ca0f-4427-b8a2-731afdf7d46f:
     operation:
       config:
         generate_ghost_records: true
@@ -25,7 +25,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: SHA1
             hashedColumns:
@@ -41,13 +40,37 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
+              columnCounter: ff6301bf-401e-4859-9124-70a2ecc8f2a8
+              stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: a7674f3d-8ec5-4d2c-83d7-dc47091ca23a
+                stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
+              - columnCounter: 75cde7d2-16dd-4ebd-b454-8e1eb21c3adf
+                stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
+              - columnCounter: bd446210-3f2b-40c5-89e0-7f673f692e03
+                stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
+            name: HK_RACE_CIRCUIT_L_S
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
               columnCounter: c643983c-d373-487d-b7d1-e64209ef0ef2
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
             config: {}
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: SHA1
             hashedColumns:
@@ -95,7 +118,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: SHA1
             hashedColumns:
@@ -109,10 +131,8 @@ steps:
           - columnReference:
               columnCounter: ed16a8d7-1f98-4c5a-89eb-c87fe5cf1184
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: INT
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: RACEID
             nullable: true
             sourceColumnReferences:
@@ -123,10 +143,8 @@ steps:
           - columnReference:
               columnCounter: a7674f3d-8ec5-4d2c-83d7-dc47091ca23a
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: INT
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: RACE_YEAR
             nullable: true
             sourceColumnReferences:
@@ -137,10 +155,8 @@ steps:
           - columnReference:
               columnCounter: 75cde7d2-16dd-4ebd-b454-8e1eb21c3adf
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: INT
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ROUND
             nullable: true
             sourceColumnReferences:
@@ -151,10 +167,8 @@ steps:
           - columnReference:
               columnCounter: 8598f0ae-a0d1-49c1-9de3-668419e4c279
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: INT
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: CIRCUITID
             nullable: true
             sourceColumnReferences:
@@ -165,7 +179,7 @@ steps:
           - columnReference:
               columnCounter: bd446210-3f2b-40c5-89e0-7f673f692e03
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: VARCHAR(100)
             description: ""
             name: CIRCUITREF
             nullable: true
@@ -177,10 +191,8 @@ steps:
           - columnReference:
               columnCounter: 1f906256-de1c-4300-8d68-ba481384e6c7
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: VARCHAR(100)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: NAME
             nullable: true
             sourceColumnReferences:
@@ -191,10 +203,8 @@ steps:
           - columnReference:
               columnCounter: 9b09b2e9-6bd5-47d2-b1ba-16b954a6a23f
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: DATE
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: RACE_DATE
             nullable: true
             sourceColumnReferences:
@@ -205,10 +215,8 @@ steps:
           - columnReference:
               columnCounter: 0883d61e-4aaa-4f87-a27b-e4819263f861
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: TIME
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: RACE_TIME
             nullable: true
             sourceColumnReferences:
@@ -219,10 +227,8 @@ steps:
           - columnReference:
               columnCounter: e393df3c-e47c-470e-b930-85c4cda27bf2
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: VARCHAR(200)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: URL
             nullable: true
             sourceColumnReferences:
@@ -233,10 +239,8 @@ steps:
           - columnReference:
               columnCounter: 9dd46c20-35b9-4181-a750-419c33c0d67a
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: DATE
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: FP1_DATE
             nullable: true
             sourceColumnReferences:
@@ -247,10 +251,8 @@ steps:
           - columnReference:
               columnCounter: 05312765-11c1-4042-acb1-14376686d0f1
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: TIME
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: FP1_TIME
             nullable: true
             sourceColumnReferences:
@@ -261,10 +263,8 @@ steps:
           - columnReference:
               columnCounter: 4adaacf7-88c9-4d40-a632-870907edf474
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: DATE
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: FP2_DATE
             nullable: true
             sourceColumnReferences:
@@ -275,10 +275,8 @@ steps:
           - columnReference:
               columnCounter: 7215f58e-04fa-4bea-9372-dd081debfd65
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: TIME
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: FP2_TIME
             nullable: true
             sourceColumnReferences:
@@ -289,10 +287,8 @@ steps:
           - columnReference:
               columnCounter: 7ba03aa5-2145-47ce-a2ae-8ab5cde65c8d
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: DATE
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: FP3_DATE
             nullable: true
             sourceColumnReferences:
@@ -303,10 +299,8 @@ steps:
           - columnReference:
               columnCounter: ea87eacc-c690-44ce-bc3b-254bd4a52b86
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: TIME
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: FP3_TIME
             nullable: true
             sourceColumnReferences:
@@ -317,10 +311,8 @@ steps:
           - columnReference:
               columnCounter: 7a5a27ef-e5a3-4307-888d-a872a26db472
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: DATE
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: QUALI_DATE
             nullable: true
             sourceColumnReferences:
@@ -331,10 +323,8 @@ steps:
           - columnReference:
               columnCounter: 2bd39ab7-4af6-4d9e-87b7-f3cb8495e479
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: TIME
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: QUALI_TIME
             nullable: true
             sourceColumnReferences:
@@ -345,10 +335,8 @@ steps:
           - columnReference:
               columnCounter: 8986babb-1053-4e1c-b977-ffada1f72f29
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: DATE
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: SPRINT_DATE
             nullable: true
             sourceColumnReferences:
@@ -359,10 +347,8 @@ steps:
           - columnReference:
               columnCounter: 6575d344-e77b-4ded-a32a-1e5d3546d287
               stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
-            dataType: VARCHAR(16777216)
+            dataType: TIME
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: SPRINT_TIME
             nullable: true
             sourceColumnReferences:
@@ -381,7 +367,6 @@ steps:
             dataType: TIMESTAMP
             defaultValue: ""
             description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
-            hashColumns: []
             is_system_ldts: true
             name: LDTS
             nullable: true
@@ -399,7 +384,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: The Record Source (RSRC) describes the source of this data.
-            hashColumns: []
             is_system_rsrc: true
             name: RSRC
             nullable: true
@@ -424,9 +408,9 @@ steps:
                 FROM {{ ref('WORK', 'KAGGLE_RACES') }} "KAGGLE_RACES"
                 INNER JOIN {{ ref('WORK', 'KAGGLE_CIRCUITS') }} "KAGGLE_CIRCUITS"
                 ON "KAGGLE_RACES"."CIRCUITID" = "KAGGLE_CIRCUITS"."CIRCUITID"
-            name: DVSTG_KAGGLE_RACES
+            name: DVSTG_RACES
             noLinkRefs: []
-      name: DVSTG_KAGGLE_RACES
+      name: DVSTG_RACES
       overrideSQL: false
       schema: ""
       sqlType: "4"

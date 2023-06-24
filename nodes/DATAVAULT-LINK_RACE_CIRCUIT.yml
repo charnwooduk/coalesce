@@ -1,5 +1,5 @@
 steps:
-  LINK_CONSTRUCTORSTANDINGS-cdfc71ef-8641-438a-ab08-85ef1f50accf:
+  LINK_RACE_CIRCUIT-838f6666-4595-48fc-9a0f-c62f04da3bc4:
     operation:
       config:
         postSQL: ""
@@ -9,30 +9,30 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: false
-      locationName: WORK
+      locationName: DATAVAULT
       materializationType: table
       metadata:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 935cd6a6-29d6-4a1c-8eca-415ba6910334
-              stepCounter: cdfc71ef-8641-438a-ab08-85ef1f50accf
+              columnCounter: a375f03a-bff4-4760-b04c-41ab5117dcdd
+              stepCounter: 838f6666-4595-48fc-9a0f-c62f04da3bc4
             config:
               is_Link_hk: true
             dataType: STRING
             description: ""
             hashColumns: []
             hashDetails: null
-            name: HK_CONSTRUCTOR_STANDINGS_L
+            name: HK_RACE_CIRCUIT_L_S
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 3d137736-a662-42f3-aeb6-38dfffda6ee3
-                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                  - columnCounter: ff6301bf-401e-4859-9124-70a2ecc8f2a8
+                    stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
                 transform: ""
           - columnReference:
-              columnCounter: e9d7696b-f17f-4e44-bc77-f28ffaa7022a
-              stepCounter: cdfc71ef-8641-438a-ab08-85ef1f50accf
+              columnCounter: 60795511-268b-4d18-b3f7-a4f28bb338fb
+              stepCounter: 838f6666-4595-48fc-9a0f-c62f04da3bc4
             dataType: STRING
             description: ""
             hashColumns: []
@@ -41,26 +41,26 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6147dcff-33ee-4614-aab4-feb575480ba6
-                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                  - columnCounter: dfe6c2a1-8f8b-4ab3-8954-7ce052238649
+                    stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
                 transform: ""
           - columnReference:
-              columnCounter: 7d5592ea-a669-44ac-bf72-eb1ec9474e90
-              stepCounter: cdfc71ef-8641-438a-ab08-85ef1f50accf
+              columnCounter: 721e154d-7b3a-4ae4-b97a-64271240a4b7
+              stepCounter: 838f6666-4595-48fc-9a0f-c62f04da3bc4
             dataType: STRING
             description: ""
             hashColumns: []
             hashDetails: null
-            name: HK_CONSTRUCTOR_H
+            name: HK_CIRCUIT_H
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 798a0722-f31c-41e2-9c56-00a646b09faf
-                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                  - columnCounter: 69fcc681-54b6-4755-b8c5-40c7739337b8
+                    stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
                 transform: ""
           - columnReference:
-              columnCounter: b0e3786b-b86d-4264-b922-ee206a7ae8a7
-              stepCounter: cdfc71ef-8641-438a-ab08-85ef1f50accf
+              columnCounter: e442ad6f-3a26-48c1-8a2b-c794e1e05150
+              stepCounter: 838f6666-4595-48fc-9a0f-c62f04da3bc4
             dataType: TIMESTAMP
             description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
             hashColumns: []
@@ -69,12 +69,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 43d4c8ee-ee73-4f7c-a77e-7a4ffb762e80
-                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                  - columnCounter: e640501c-6e79-47fe-8ae8-fa052560ebe5
+                    stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
                 transform: ""
           - columnReference:
-              columnCounter: 8bb7de4c-6cf0-48a4-a021-4de97330e041
-              stepCounter: cdfc71ef-8641-438a-ab08-85ef1f50accf
+              columnCounter: 4de8ef50-afa8-4c96-a839-c6c51e80bf67
+              stepCounter: 838f6666-4595-48fc-9a0f-c62f04da3bc4
             dataType: STRING
             description: The Record Source (RSRC) describes the source of this data.
             hashColumns: []
@@ -83,8 +83,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: f9af3bb5-27a7-4c6d-b01f-63a2f04a52a5
-                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                  - columnCounter: c1e0f067-3d9f-4dcb-90ce-c661714d0af6
+                    stepCounter: 24b71c60-ca0f-4427-b8a2-731afdf7d46f
                 transform: ""
         cteString: ""
         enabledColumnTestIDs: []
@@ -93,14 +93,14 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: WORK
-                nodeName: DVSTG_KAGGLE_CONSTRUCTORSTANDINGS
+                nodeName: DVSTG_RACES
             join:
-              joinCondition: FROM {{ ref('WORK', 'DVSTG_KAGGLE_CONSTRUCTORSTANDINGS') }} "DVSTG_KAGGLE_CONSTRUCTORSTANDINGS"
-            name: LINK_CONSTRUCTORSTANDINGS
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_RACES') }} "DVSTG_RACES"
+            name: LINK_RACE_CIRCUIT
             noLinkRefs: []
-      name: LINK_CONSTRUCTORSTANDINGS
+      name: LINK_RACE_CIRCUIT
       overrideSQL: false
       schema: ""
       sqlType: "7"
       type: sql
-    stepCounter: cdfc71ef-8641-438a-ab08-85ef1f50accf
+    stepCounter: 838f6666-4595-48fc-9a0f-c62f04da3bc4

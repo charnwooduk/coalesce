@@ -1,0 +1,165 @@
+steps:
+  SATV0_CONSTRUCTOR_RACE-5a269424-e91c-4044-a8b9-2928ea859bdf:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 6c2bf1a8-3370-4a88-986f-89bb3bcc6dae
+              stepCounter: 5a269424-e91c-4044-a8b9-2928ea859bdf
+            config:
+              is_hd: true
+              is_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_CONSTRUCTOR_RACE_L
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3d137736-a662-42f3-aeb6-38dfffda6ee3
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+          - columnReference:
+              columnCounter: f00d6ebf-466b-4365-b9cd-dfdab7242673
+              stepCounter: 5a269424-e91c-4044-a8b9-2928ea859bdf
+            config:
+              is_hd: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_CONSTRUCTOR_RACE_N_S
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2c0e074a-413d-4a0d-bd8b-408ec29f5371
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+          - columnReference:
+              columnCounter: 798d1136-542b-418b-ac54-38ba6724547a
+              stepCounter: 5a269424-e91c-4044-a8b9-2928ea859bdf
+            dataType: NUMBER(4,1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TOTAL_POINTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b75a18c6-f6a1-40b1-bd20-84ba36482909
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+          - columnReference:
+              columnCounter: 5ca1fd36-f33c-475f-bb7f-822300d752d3
+              stepCounter: 5a269424-e91c-4044-a8b9-2928ea859bdf
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TOTAL_WINS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 76a5c273-f99f-40d6-8530-a24738d1aa38
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+          - columnReference:
+              columnCounter: 9ddb8bcf-26ec-465d-aa6d-43976a5cbce6
+              stepCounter: 5a269424-e91c-4044-a8b9-2928ea859bdf
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CURRENT_POSITION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1627e35b-3e7a-4ede-aa37-ecce4705830e
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+          - columnReference:
+              columnCounter: 0980bea0-38bd-486d-848c-56b9cf7c0513
+              stepCounter: 5a269424-e91c-4044-a8b9-2928ea859bdf
+            dataType: NUMBER(3,1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RACE_POINTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f72c1b22-798d-4068-9333-f2e182f5be7e
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+          - columnReference:
+              columnCounter: 3354cad4-1461-4829-ab73-b794ae4ff547
+              stepCounter: 5a269424-e91c-4044-a8b9-2928ea859bdf
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RACE_STATUS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 54c806c3-c3de-47c0-9f81-d3868d0340f9
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+          - columnReference:
+              columnCounter: e5c7cd8e-06a9-48f4-be4e-3dbae156fb42
+              stepCounter: 5a269424-e91c-4044-a8b9-2928ea859bdf
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 43d4c8ee-ee73-4f7c-a77e-7a4ffb762e80
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+          - columnReference:
+              columnCounter: fc1c284f-b862-4b87-907c-b0f69fecb635
+              stepCounter: 5a269424-e91c-4044-a8b9-2928ea859bdf
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f9af3bb5-27a7-4c6d-b01f-63a2f04a52a5
+                    stepCounter: 1f7739f9-5959-4562-92a6-01527097f9ed
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_CONSTRUCTOR_RACE
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_CONSTRUCTOR_RACE') }} "DVSTG_CONSTRUCTOR_RACE"
+            name: SATV0_CONSTRUCTOR_RACE
+            noLinkRefs: []
+      name: SATV0_CONSTRUCTOR_RACE
+      overrideSQL: false
+      schema: ""
+      sqlType: "8"
+      type: sql
+    stepCounter: 5a269424-e91c-4044-a8b9-2928ea859bdf

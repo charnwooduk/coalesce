@@ -1,5 +1,5 @@
 steps:
-  HUB_SEASONS-7d240fb4-a314-4e34-b7fc-144b9b66f0f0:
+  SATV0_SEASONS-bf4e78b3-a2bd-4153-baee-48350b901d2e:
     operation:
       config:
         postSQL: ""
@@ -9,20 +9,18 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: false
-      locationName: WORK
+      locationName: DATAVAULT
       materializationType: table
       metadata:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 24cea957-dd05-4419-a0a3-4d14e6339acc
-              stepCounter: 7d240fb4-a314-4e34-b7fc-144b9b66f0f0
+              columnCounter: 3b12bfbc-7ca9-4df3-ab08-45d3a09ece4c
+              stepCounter: bf4e78b3-a2bd-4153-baee-48350b901d2e
             config:
-              is_Hub_hk: true
+              is_hk: true
             dataType: STRING
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: HK_SEASON_H
             nullable: true
             sourceColumnReferences:
@@ -31,22 +29,38 @@ steps:
                     stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
                 transform: ""
           - columnReference:
-              columnCounter: 769491e6-e795-454a-a545-c78b9870bf1b
-              stepCounter: 7d240fb4-a314-4e34-b7fc-144b9b66f0f0
-            dataType: INT
+              columnCounter: 19bacb11-c02a-4156-9ce6-5c85d4bc5d08
+              stepCounter: bf4e78b3-a2bd-4153-baee-48350b901d2e
+            config:
+              is_hd: true
+            dataType: STRING
             description: ""
             hashColumns: []
             hashDetails: null
-            name: SEASON_YEAR
+            name: HD_SEASON_N_S
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: c57fa0c3-8338-4cfe-9d03-9afd985633ed
+                  - columnCounter: d08c7f9c-9970-4aa2-a4cd-c9475745e95e
                     stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
                 transform: ""
           - columnReference:
-              columnCounter: b16c00c5-9dd6-4a30-a058-c732a8783a03
-              stepCounter: 7d240fb4-a314-4e34-b7fc-144b9b66f0f0
+              columnCounter: c3fa5006-72b2-4e58-8146-c406a8489e63
+              stepCounter: bf4e78b3-a2bd-4153-baee-48350b901d2e
+            dataType: VARCHAR(200)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: URL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c4338796-4274-4117-a9c0-ac3810c41467
+                    stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
+                transform: ""
+          - columnReference:
+              columnCounter: d05999e9-088e-4a17-a1b4-c41a73188e1c
+              stepCounter: bf4e78b3-a2bd-4153-baee-48350b901d2e
             dataType: TIMESTAMP
             description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
             hashColumns: []
@@ -59,8 +73,8 @@ steps:
                     stepCounter: 4128fb5c-e4a5-4f2d-bfd3-091266481793
                 transform: ""
           - columnReference:
-              columnCounter: 33634b0d-5355-4d90-9e7c-426f09850943
-              stepCounter: 7d240fb4-a314-4e34-b7fc-144b9b66f0f0
+              columnCounter: 99774a6c-ff20-4bb3-a3fc-180cce81e271
+              stepCounter: bf4e78b3-a2bd-4153-baee-48350b901d2e
             dataType: STRING
             description: The Record Source (RSRC) describes the source of this data.
             hashColumns: []
@@ -82,11 +96,11 @@ steps:
                 nodeName: DVSTG_SEASONS
             join:
               joinCondition: FROM {{ ref('WORK', 'DVSTG_SEASONS') }} "DVSTG_SEASONS"
-            name: HUB_SEASONS
+            name: SATV0_SEASONS
             noLinkRefs: []
-      name: HUB_SEASONS
+      name: SATV0_SEASONS
       overrideSQL: false
       schema: ""
-      sqlType: "6"
+      sqlType: "8"
       type: sql
-    stepCounter: 7d240fb4-a314-4e34-b7fc-144b9b66f0f0
+    stepCounter: bf4e78b3-a2bd-4153-baee-48350b901d2e

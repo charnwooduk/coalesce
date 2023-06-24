@@ -1,0 +1,92 @@
+steps:
+  HUB_CIRCUITS-da6ab599-1d73-41d8-95b5-b35ed7d4af3c:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: a341ddf1-abd0-42e0-b6db-2ba6c732ae68
+              stepCounter: da6ab599-1d73-41d8-95b5-b35ed7d4af3c
+            config:
+              is_Hub_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_CIRCUIT_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 39aae005-0e69-43bd-8893-78bf408c1651
+                    stepCounter: f314c0aa-cadc-4a6b-a971-afe6a5215cb1
+                transform: ""
+          - columnReference:
+              columnCounter: 05442f6d-c0f3-440b-9136-a1cfef51a917
+              stepCounter: da6ab599-1d73-41d8-95b5-b35ed7d4af3c
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CIRCUITREF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 97085ec9-2e8b-4b34-bdde-c29eb50e4f8e
+                    stepCounter: f314c0aa-cadc-4a6b-a971-afe6a5215cb1
+                transform: ""
+          - columnReference:
+              columnCounter: c2f6013e-0614-4d27-a793-fea68183c066
+              stepCounter: da6ab599-1d73-41d8-95b5-b35ed7d4af3c
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 758613d5-a259-4ba1-af13-e04bd8b4d566
+                    stepCounter: f314c0aa-cadc-4a6b-a971-afe6a5215cb1
+                transform: ""
+          - columnReference:
+              columnCounter: 029c06fe-b077-4baf-922f-4139a1e74041
+              stepCounter: da6ab599-1d73-41d8-95b5-b35ed7d4af3c
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a045efed-8268-45a9-aa53-a084c661a5f9
+                    stepCounter: f314c0aa-cadc-4a6b-a971-afe6a5215cb1
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_CIRCUITS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_CIRCUITS') }} "DVSTG_CIRCUITS"
+            name: HUB_CIRCUITS
+            noLinkRefs: []
+      name: HUB_CIRCUITS
+      overrideSQL: false
+      schema: ""
+      sqlType: "6"
+      type: sql
+    stepCounter: da6ab599-1d73-41d8-95b5-b35ed7d4af3c

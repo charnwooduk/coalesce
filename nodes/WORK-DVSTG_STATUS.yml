@@ -1,0 +1,157 @@
+steps:
+  DVSTG_STATUS-36a7d106-01a4-4221-a1e9-120dcf2c146d:
+    operation:
+      config:
+        generate_ghost_records: true
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: WORK
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              isDistinct: false
+            columnReference:
+              columnCounter: 972d2137-fe3f-4f78-985d-c6830d566daa
+              stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 3c02874a-e5bf-4def-9cc3-9b5f52cf85df
+                stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+            name: HK_STATUS_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              isDistinct: false
+            columnReference:
+              columnCounter: 599131ca-b88f-499b-a250-b836db4fc0b2
+              stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 9e66a198-541d-4185-af36-df752b96fd44
+                stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+              - columnCounter: 7dfad017-70f4-417a-a1e2-9e48921d78e7
+                stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+            name: HD_STATUS_L_S
+            nullable: true
+            sourceColumnReferences: []
+          - appliedColumnTests:
+              isDistinct: true
+            columnReference:
+              columnCounter: 3c02874a-e5bf-4def-9cc3-9b5f52cf85df
+              stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+            dataType: VARCHAR(20)
+            description: ""
+            name: STATUSREF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5e410b24-12e8-45d6-8ebe-96a726460c37
+                    stepCounter: d8a4294c-1c5c-4491-94c7-1a51621be591
+                transform: replace(REPLACE(LEFT("KAGGLE_STATUS"."STATUS",15), ' ', '_'),'+','')
+          - appliedColumnTests:
+              isDistinct: false
+            columnReference:
+              columnCounter: 9e66a198-541d-4185-af36-df752b96fd44
+              stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+            dataType: INT
+            description: ""
+            name: STATUSID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 535f4d9c-c2b3-49fa-976e-cbeac5f3dd88
+                    stepCounter: d8a4294c-1c5c-4491-94c7-1a51621be591
+                transform: ""
+          - appliedColumnTests:
+              isDistinct: false
+            columnReference:
+              columnCounter: 7dfad017-70f4-417a-a1e2-9e48921d78e7
+              stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+            dataType: VARCHAR(100)
+            description: ""
+            name: STATUS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5e410b24-12e8-45d6-8ebe-96a726460c37
+                    stepCounter: d8a4294c-1c5c-4491-94c7-1a51621be591
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              isDistinct: false
+            columnReference:
+              columnCounter: b837bfd2-d90a-4c66-aa28-23fcc2da1915
+              stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            is_system_ldts: true
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: SYSDATE()
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              isDistinct: false
+            columnReference:
+              columnCounter: 07d6c85e-c415-4e98-861f-62172f349613
+              stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: The Record Source (RSRC) describes the source of this data.
+            is_system_rsrc: true
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "{{record_source()}}"
+        cteString: ""
+        enabledColumnTestIDs:
+          - isDistinct
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: KAGGLE_STATUS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'KAGGLE_STATUS') }} "KAGGLE_STATUS"
+            name: DVSTG_STATUS
+            noLinkRefs: []
+      name: DVSTG_STATUS
+      overrideSQL: false
+      schema: ""
+      sqlType: "4"
+      type: sql
+    stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d

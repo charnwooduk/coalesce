@@ -1,0 +1,92 @@
+steps:
+  HUB_DRIVER-34b6fbdf-7fa6-4acc-a2ac-6150189139c8:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 6d217c0e-140d-4563-b156-260f651273ae
+              stepCounter: 34b6fbdf-7fa6-4acc-a2ac-6150189139c8
+            config:
+              is_Hub_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_DRIVER_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5f1536c5-b0f1-410e-95ec-0326f9bc3332
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: b5ea4ed9-4656-4c9b-9b13-07f190294de1
+              stepCounter: 34b6fbdf-7fa6-4acc-a2ac-6150189139c8
+            dataType: VARCHAR(100)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DRIVERREF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ddb36e20-80a6-45a4-a6a0-3b655ad89353
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: 3ecc5d2c-c206-4852-a6f6-72b5c2d555be
+              stepCounter: 34b6fbdf-7fa6-4acc-a2ac-6150189139c8
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c0f15968-56aa-4d6c-9267-539decba3461
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: 94467c0d-acb2-4919-8658-578c0f16a3e1
+              stepCounter: 34b6fbdf-7fa6-4acc-a2ac-6150189139c8
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7002198a-32c9-47c6-afc3-0a2333810717
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_DRIVER
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_DRIVER') }} "DVSTG_DRIVER"
+            name: HUB_DRIVER
+            noLinkRefs: []
+      name: HUB_DRIVER
+      overrideSQL: false
+      schema: ""
+      sqlType: "6"
+      type: sql
+    stepCounter: 34b6fbdf-7fa6-4acc-a2ac-6150189139c8

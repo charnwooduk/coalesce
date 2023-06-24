@@ -1,0 +1,230 @@
+steps:
+  DVSTG_DRIVER-33a5f070-5839-403e-82c3-af41aa36f27e:
+    operation:
+      config:
+        generate_ghost_records: true
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: WORK
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5f1536c5-b0f1-410e-95ec-0326f9bc3332
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: ddb36e20-80a6-45a4-a6a0-3b655ad89353
+                stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            name: HK_DRIVER_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 154fb21f-5166-463c-9dee-f18b80a645e4
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 5b30118e-2044-4051-80ab-8f816edb5d28
+                stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+              - columnCounter: edbc37d3-93ed-4924-b062-e1533a5ddbb9
+                stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+              - columnCounter: 8685fab7-49fa-4e50-aab8-134bb3d4e78c
+                stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+              - columnCounter: 2e5623ab-0040-48d6-bf20-0248e4f7f491
+                stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+              - columnCounter: 0be7fb38-44ac-4588-bc55-d547744052e2
+                stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+              - columnCounter: 1e74ef40-8a85-4a60-b59b-84bc5f753b96
+                stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+              - columnCounter: 7beef87a-fac1-421c-b6e0-ca57c560c470
+                stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+              - columnCounter: a7c864be-99bd-4a47-93a1-4dcf8fc84dae
+                stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            name: HD_DRIVER_N_S
+            nullable: true
+            sourceColumnReferences: []
+          - columnReference:
+              columnCounter: 5b30118e-2044-4051-80ab-8f816edb5d28
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            dataType: INT
+            description: ""
+            name: DRIVERID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6e694661-a10e-4e3b-bac1-7741590a487f
+                    stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+                transform: ""
+          - columnReference:
+              columnCounter: ddb36e20-80a6-45a4-a6a0-3b655ad89353
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            dataType: VARCHAR(100)
+            description: ""
+            name: DRIVERREF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a097dfdf-41c6-4298-b714-7425e4f18ce0
+                    stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+                transform: ""
+          - columnReference:
+              columnCounter: edbc37d3-93ed-4924-b062-e1533a5ddbb9
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            dataType: INT
+            description: ""
+            name: NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a111f2d0-f289-4981-b1e3-234cc154bd86
+                    stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+                transform: ""
+          - columnReference:
+              columnCounter: 8685fab7-49fa-4e50-aab8-134bb3d4e78c
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            dataType: VARCHAR(3)
+            description: ""
+            name: CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: fb18ac1c-2375-4766-836b-e7b779a670af
+                    stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+                transform: ""
+          - columnReference:
+              columnCounter: 2e5623ab-0040-48d6-bf20-0248e4f7f491
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            dataType: VARCHAR(50)
+            description: ""
+            name: FORENAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6fe94464-dfba-455d-831b-02eb58f23d3a
+                    stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+                transform: ""
+          - columnReference:
+              columnCounter: 0be7fb38-44ac-4588-bc55-d547744052e2
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            dataType: VARCHAR(50)
+            description: ""
+            name: SURNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 935398c5-cc8f-4b3a-a20f-5fe2ac1fd237
+                    stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+                transform: ""
+          - columnReference:
+              columnCounter: 1e74ef40-8a85-4a60-b59b-84bc5f753b96
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            dataType: DATE
+            description: ""
+            name: DOB
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 132e43e8-3d56-4c20-8472-beee83f32fa1
+                    stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+                transform: ""
+          - columnReference:
+              columnCounter: 7beef87a-fac1-421c-b6e0-ca57c560c470
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            dataType: VARCHAR(50)
+            description: ""
+            name: NATIONALITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f4b9b7c6-30a3-47b9-8725-b25e6b718206
+                    stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+                transform: ""
+          - columnReference:
+              columnCounter: a7c864be-99bd-4a47-93a1-4dcf8fc84dae
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            dataType: VARCHAR(200)
+            description: ""
+            name: URL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 233a27bd-8348-447c-90f1-fbccd159967c
+                    stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c0f15968-56aa-4d6c-9267-539decba3461
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            is_system_ldts: true
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: SYSDATE()
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7002198a-32c9-47c6-afc3-0a2333810717
+              stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: The Record Source (RSRC) describes the source of this data.
+            is_system_rsrc: true
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "{{record_source()}}"
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: KAGGLE_DRIVER
+            join:
+              joinCondition: FROM {{ ref('WORK', 'KAGGLE_DRIVER') }} "KAGGLE_DRIVER"
+            name: DVSTG_DRIVER
+            noLinkRefs: []
+      name: DVSTG_DRIVER
+      overrideSQL: false
+      schema: ""
+      sqlType: "4"
+      type: sql
+    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e

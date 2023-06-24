@@ -1,0 +1,106 @@
+steps:
+  LINK_DRIVERSTANDINGS-41e239c2-175e-45e8-b34d-33dba3e445be:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 38948309-f07e-4716-bcac-cae06df95d95
+              stepCounter: 41e239c2-175e-45e8-b34d-33dba3e445be
+            config:
+              is_Link_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_DRIVER_STANDINGS_L_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5d783423-6d97-4f06-8d14-b6254aca270b
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+          - columnReference:
+              columnCounter: 6190bd3f-8106-47da-a564-acca3791bf92
+              stepCounter: 41e239c2-175e-45e8-b34d-33dba3e445be
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_RACE_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0180c2be-f825-4869-b419-4aa41f8677aa
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+          - columnReference:
+              columnCounter: 0cabff8b-d369-41f6-bd80-74e941f23201
+              stepCounter: 41e239c2-175e-45e8-b34d-33dba3e445be
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_DRIVER_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c360201a-c598-47b5-ab16-938b1e17d8f6
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+          - columnReference:
+              columnCounter: 2f6361e8-9e9c-4ecf-9499-127e2fb7da96
+              stepCounter: 41e239c2-175e-45e8-b34d-33dba3e445be
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 261936b9-927c-4e9b-9a5d-4a823e49ce9a
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+          - columnReference:
+              columnCounter: c993547e-0d88-40ae-bc1b-d93ec9500f89
+              stepCounter: 41e239c2-175e-45e8-b34d-33dba3e445be
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e166708d-c2bc-4b0b-baa0-eee4c4f35b28
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_DRIVERSTANDINGS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_DRIVERSTANDINGS') }} "DVSTG_DRIVERSTANDINGS"
+            name: LINK_DRIVERSTANDINGS
+            noLinkRefs: []
+      name: LINK_DRIVERSTANDINGS
+      overrideSQL: false
+      schema: ""
+      sqlType: "7"
+      type: sql
+    stepCounter: 41e239c2-175e-45e8-b34d-33dba3e445be

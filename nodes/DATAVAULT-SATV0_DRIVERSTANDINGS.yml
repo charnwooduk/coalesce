@@ -1,0 +1,150 @@
+steps:
+  SATV0_DRIVERSTANDINGS-97f19d94-ae5a-40de-a69e-51e99dd6fa02:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 5a490665-5053-456f-9986-b0dbe01b69e5
+              stepCounter: 97f19d94-ae5a-40de-a69e-51e99dd6fa02
+            config:
+              is_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_DRIVER_STANDINGS_L_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5d783423-6d97-4f06-8d14-b6254aca270b
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+          - columnReference:
+              columnCounter: fccb369d-0f09-415e-90a1-9ea5a94f170b
+              stepCounter: 97f19d94-ae5a-40de-a69e-51e99dd6fa02
+            config:
+              is_hd: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_DRIVERSTANDINGS_N_S
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: cbcb78a9-168b-4ba9-ab3c-d3ba1924c2f7
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+          - columnReference:
+              columnCounter: 6da22623-a065-4316-b965-dbcbce405973
+              stepCounter: 97f19d94-ae5a-40de-a69e-51e99dd6fa02
+            dataType: NUMBER(4,1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POINTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ce6a97c4-14e3-4d76-acd4-c9756ffe9f96
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+          - columnReference:
+              columnCounter: 5a1769b1-37fd-4234-ad0a-6a8cdf214d7c
+              stepCounter: 97f19d94-ae5a-40de-a69e-51e99dd6fa02
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POSITION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6b18b2a1-6ea2-4b42-8e3a-061311ee4c11
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+          - columnReference:
+              columnCounter: 619ba7cd-a16c-4024-bf14-3465a5c73cd3
+              stepCounter: 97f19d94-ae5a-40de-a69e-51e99dd6fa02
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POSITIONTEXT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 11108183-1048-4d87-9ca8-6fc989d1f263
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+          - columnReference:
+              columnCounter: 7f1e74ee-970b-4167-a43a-ecb0e7c97227
+              stepCounter: 97f19d94-ae5a-40de-a69e-51e99dd6fa02
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: WINS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f2ca6869-d44c-46fe-ba36-49a6dd8bfa65
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+          - columnReference:
+              columnCounter: 9a08f175-64b6-4e50-9a6b-5e9122283512
+              stepCounter: 97f19d94-ae5a-40de-a69e-51e99dd6fa02
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 261936b9-927c-4e9b-9a5d-4a823e49ce9a
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+          - columnReference:
+              columnCounter: c571565b-0a2f-4d57-b88b-219d3b143d41
+              stepCounter: 97f19d94-ae5a-40de-a69e-51e99dd6fa02
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e166708d-c2bc-4b0b-baa0-eee4c4f35b28
+                    stepCounter: d9dd1cf7-7924-4147-ae86-352f6356cbb9
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_DRIVERSTANDINGS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_DRIVERSTANDINGS') }} "DVSTG_DRIVERSTANDINGS"
+            name: SATV0_DRIVERSTANDINGS
+            noLinkRefs: []
+      name: SATV0_DRIVERSTANDINGS
+      overrideSQL: false
+      schema: ""
+      sqlType: "8"
+      type: sql
+    stepCounter: 97f19d94-ae5a-40de-a69e-51e99dd6fa02

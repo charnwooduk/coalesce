@@ -1,0 +1,206 @@
+steps:
+  SATV0_DRIVER-3c1b1bd2-9216-4ece-ab44-1253bf88cefd:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 910fb587-9d56-4d0e-a147-77620d7b6a96
+              stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd
+            config:
+              is_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_DRIVER_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5f1536c5-b0f1-410e-95ec-0326f9bc3332
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: 186e00b3-bd16-4a9b-ace5-5f660db8e139
+              stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd
+            config:
+              is_hd: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_DRIVER_N_S
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 154fb21f-5166-463c-9dee-f18b80a645e4
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: 7a5503f9-39f6-42f8-9396-aa5c7a249cfa
+              stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DRIVERID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5b30118e-2044-4051-80ab-8f816edb5d28
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: 2b3b93f7-052a-4a4a-8347-a6f89c60dc49
+              stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: edbc37d3-93ed-4924-b062-e1533a5ddbb9
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: 5083b86d-ba35-478e-b64d-1b28322a0d08
+              stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd
+            dataType: VARCHAR(3)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8685fab7-49fa-4e50-aab8-134bb3d4e78c
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: 7899b955-e27e-41ed-9eb9-4a591eb3f8aa
+              stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FORENAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2e5623ab-0040-48d6-bf20-0248e4f7f491
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: ca980084-3ed4-4769-895a-60f221bebbbc
+              stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SURNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0be7fb38-44ac-4588-bc55-d547744052e2
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: 960884cf-7bbf-418b-9f1f-f0fcb3b6e092
+              stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DOB
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1e74ef40-8a85-4a60-b59b-84bc5f753b96
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: 0ba0fe4c-b395-4b8e-ab61-76f25155ac89
+              stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NATIONALITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7beef87a-fac1-421c-b6e0-ca57c560c470
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: b3cd7f9e-a8ba-4718-8811-c8fa2f538c67
+              stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd
+            dataType: VARCHAR(200)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: URL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a7c864be-99bd-4a47-93a1-4dcf8fc84dae
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: 6ee479ca-f19f-4740-ae0b-42a66cc1360d
+              stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c0f15968-56aa-4d6c-9267-539decba3461
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+          - columnReference:
+              columnCounter: 607d9a12-78b4-4a2c-88f6-a34a6f581b57
+              stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7002198a-32c9-47c6-afc3-0a2333810717
+                    stepCounter: 33a5f070-5839-403e-82c3-af41aa36f27e
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_DRIVER
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_DRIVER') }} "DVSTG_DRIVER"
+            name: SATV0_DRIVER
+            noLinkRefs: []
+      name: SATV0_DRIVER
+      overrideSQL: false
+      schema: ""
+      sqlType: "8"
+      type: sql
+    stepCounter: 3c1b1bd2-9216-4ece-ab44-1253bf88cefd

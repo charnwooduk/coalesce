@@ -1,0 +1,92 @@
+steps:
+  HUB_CONSTRUCTORS-68564e34-60b9-48c9-a91a-31bcce126b34:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 47985e5b-b9a8-472b-967b-40e94b461c36
+              stepCounter: 68564e34-60b9-48c9-a91a-31bcce126b34
+            config:
+              is_Hub_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_CONSTRUCTOR_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: fe3b400b-a3ea-4a91-9170-20e45bb21f40
+                    stepCounter: aa90cc1e-09a6-4f89-b5b0-0701944ac18d
+                transform: ""
+          - columnReference:
+              columnCounter: a25c3ed0-6cdb-4bb2-90fb-2b9a832f9a4b
+              stepCounter: 68564e34-60b9-48c9-a91a-31bcce126b34
+            dataType: VARCHAR(100)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CONSTRUCTORREF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 444ff0d9-421a-4b7e-88fc-4773a408bae8
+                    stepCounter: aa90cc1e-09a6-4f89-b5b0-0701944ac18d
+                transform: ""
+          - columnReference:
+              columnCounter: ca3a5943-cd5c-45cb-af45-b197af54ae39
+              stepCounter: 68564e34-60b9-48c9-a91a-31bcce126b34
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3330aa3e-705d-45e3-a4de-ad67fe59b365
+                    stepCounter: aa90cc1e-09a6-4f89-b5b0-0701944ac18d
+                transform: ""
+          - columnReference:
+              columnCounter: 5700ea25-d088-43f2-bdd5-b4a2aee47f29
+              stepCounter: 68564e34-60b9-48c9-a91a-31bcce126b34
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5290715a-cea2-443f-bf2e-dfcd22b91714
+                    stepCounter: aa90cc1e-09a6-4f89-b5b0-0701944ac18d
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_CONSTRUCTORS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_CONSTRUCTORS') }} "DVSTG_CONSTRUCTORS"
+            name: HUB_CONSTRUCTORS
+            noLinkRefs: []
+      name: HUB_CONSTRUCTORS
+      overrideSQL: false
+      schema: ""
+      sqlType: "6"
+      type: sql
+    stepCounter: 68564e34-60b9-48c9-a91a-31bcce126b34

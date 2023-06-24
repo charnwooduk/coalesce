@@ -1,0 +1,120 @@
+steps:
+  LINK_ALL_RESULTS-7809fb3d-5a00-44bb-bfe0-ad5b5e386731:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 082f6ebd-4bcf-4a5b-86a8-98cbdb65f937
+              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+            config:
+              is_Link_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_ALL_RESULTS_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 15b523f2-00d8-4451-9636-79fb2efd2390
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: c3d87e8c-1533-4576-971d-5778d6951540
+              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_RACE_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d75ff47a-3391-4649-badd-78b3f1952ebd
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 74d96f83-0030-4b90-9c5c-a8dfe416348d
+              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_DRIVER_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ac020824-a35b-4490-82c3-bcc2cc55fcc7
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 1c55e7d9-9100-433f-8f5d-98e7fbd663db
+              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_CONSTRUCTOR_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 661bc4d3-881e-4270-9801-fcb5d8b7dd76
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: 7b9508a0-65da-4f30-a9ea-4496993bf87f
+              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 95b2f776-dc2e-4f1e-9c8e-bf15f2c6f61a
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
+              columnCounter: a13fca4d-fbde-4366-aeed-09cd3ab62ab6
+              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 29b34b46-b4dc-4ac3-a652-7ea260e8bb40
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_RESULTS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_RESULTS') }} "DVSTG_RESULTS"
+            name: LINK_ALL_RESULTS
+            noLinkRefs: []
+      name: LINK_ALL_RESULTS
+      overrideSQL: false
+      schema: ""
+      sqlType: "7"
+      type: sql
+    stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731

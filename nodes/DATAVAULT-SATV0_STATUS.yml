@@ -1,0 +1,122 @@
+steps:
+  SATV0_STATUS-49de7e0f-fe16-40af-9754-7de0cd119301:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 5a4e97ef-dc68-4e70-8aa3-ba1766cc6604
+              stepCounter: 49de7e0f-fe16-40af-9754-7de0cd119301
+            config:
+              is_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_STATUS_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 972d2137-fe3f-4f78-985d-c6830d566daa
+                    stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+                transform: ""
+          - columnReference:
+              columnCounter: 03602d0a-a559-404d-aa3a-5db95a45a75d
+              stepCounter: 49de7e0f-fe16-40af-9754-7de0cd119301
+            config:
+              is_hd: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_STATUS_L_S
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 599131ca-b88f-499b-a250-b836db4fc0b2
+                    stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+                transform: ""
+          - columnReference:
+              columnCounter: 99dd5047-6305-48df-b6a4-bddac5bf50e5
+              stepCounter: 49de7e0f-fe16-40af-9754-7de0cd119301
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STATUSID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9e66a198-541d-4185-af36-df752b96fd44
+                    stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+                transform: ""
+          - columnReference:
+              columnCounter: 85f4a8a6-3689-4b6a-ac8f-1cb1488468ed
+              stepCounter: 49de7e0f-fe16-40af-9754-7de0cd119301
+            dataType: VARCHAR(100)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STATUS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7dfad017-70f4-417a-a1e2-9e48921d78e7
+                    stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+                transform: ""
+          - columnReference:
+              columnCounter: e6e96526-8c0c-44e8-b63f-074e36e77808
+              stepCounter: 49de7e0f-fe16-40af-9754-7de0cd119301
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b837bfd2-d90a-4c66-aa28-23fcc2da1915
+                    stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+                transform: ""
+          - columnReference:
+              columnCounter: e6d3c7b4-6bbc-4d99-bf83-98d73377f823
+              stepCounter: 49de7e0f-fe16-40af-9754-7de0cd119301
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 07d6c85e-c415-4e98-861f-62172f349613
+                    stepCounter: 36a7d106-01a4-4221-a1e9-120dcf2c146d
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_STATUS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_STATUS') }} "DVSTG_STATUS"
+            name: SATV0_STATUS
+            noLinkRefs: []
+      name: SATV0_STATUS
+      overrideSQL: false
+      schema: ""
+      sqlType: "8"
+      type: sql
+    stepCounter: 49de7e0f-fe16-40af-9754-7de0cd119301
