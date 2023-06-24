@@ -1,0 +1,296 @@
+steps:
+  DVSTG_QUALIFYING-3087c85c-00c7-40cf-a982-85cee54fcfe2:
+    operation:
+      config:
+        generate_ghost_records: true
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: WORK
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c790dcea-9bcb-489e-9b3f-a00bb98dbbf6
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: e52a42ff-9729-47a3-a0e9-509d84275b8b
+                stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+              - columnCounter: 3bc5c4cf-d3bb-4056-b93f-1896e3bfd75d
+                stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+              - columnCounter: c35f97bb-8017-4b5a-be44-c6fe1ee0f573
+                stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+              - columnCounter: 78638271-63ba-44df-b943-035a043d24d3
+                stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            name: HK_ALL_RESULTS_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7227d3af-b42e-4420-bbb7-3520cc15d521
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: d0670660-a131-4214-81c7-54c3e56c56ac
+                stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+              - columnCounter: e3894ebc-a894-4add-bdb2-ef4fb1e9d803
+                stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+              - columnCounter: 5190f271-cdc7-47f8-8e25-9394aec5e875
+                stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+              - columnCounter: bfd9457b-8240-45bc-846b-96723cd57956
+                stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+              - columnCounter: 45f1d328-733d-4ed5-85d0-01fd5ec89caa
+                stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            name: HD_QUALIFYING_RESULTS
+            nullable: true
+            sourceColumnReferences: []
+          - columnReference:
+              columnCounter: cbed4e7e-5482-4663-a459-b4bd3c8d2168
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: QUALIFYID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d0f568a9-ecaa-4042-8adc-7754569999e5
+                    stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+                transform: ""
+          - columnReference:
+              columnCounter: fdb02ee7-21d6-44c7-917e-2928a2851526
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: RACEID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ea9618c1-66ac-4e7d-81f6-bfe6622aba6d
+                    stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+                transform: ""
+          - columnReference:
+              columnCounter: e52a42ff-9729-47a3-a0e9-509d84275b8b
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: RACE_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d958f7aa-3926-43bb-a9d5-6776cb194201
+                    stepCounter: ba82fb32-85b1-4bf2-8ef5-f172c2b54d45
+                transform: ""
+          - columnReference:
+              columnCounter: 3bc5c4cf-d3bb-4056-b93f-1896e3bfd75d
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: ROUND
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d9876a56-6e64-472c-8a34-03d87eac816d
+                    stepCounter: ba82fb32-85b1-4bf2-8ef5-f172c2b54d45
+                transform: ""
+          - columnReference:
+              columnCounter: e8cf308d-7ba0-4b79-a10a-8fef167718e0
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: DRIVERID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3ca30d6a-74c9-426a-98aa-1d1f19fd9006
+                    stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+                transform: ""
+          - columnReference:
+              columnCounter: c35f97bb-8017-4b5a-be44-c6fe1ee0f573
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: DRIVERREF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a097dfdf-41c6-4298-b714-7425e4f18ce0
+                    stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+                transform: ""
+          - columnReference:
+              columnCounter: 38d930bf-22bf-4d47-bf9c-d26da2f78af6
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: CONSTRUCTORID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5dcda8e4-a9bd-4e44-9e11-95715578bd7e
+                    stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+                transform: ""
+          - columnReference:
+              columnCounter: 78638271-63ba-44df-b943-035a043d24d3
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: CONSTRUCTORREF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8f447690-4134-4706-9f37-704efd92aaa2
+                    stepCounter: 429b5942-8c50-4a75-b742-878a68c6a9e6
+                transform: ""
+          - columnReference:
+              columnCounter: d0670660-a131-4214-81c7-54c3e56c56ac
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 016152a8-c977-4dd1-9e61-225bc9426b8c
+                    stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+                transform: ""
+          - columnReference:
+              columnCounter: e3894ebc-a894-4add-bdb2-ef4fb1e9d803
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: POSITION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c3d12a44-8f6d-46e5-ab04-d247c79ede94
+                    stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+                transform: ""
+          - columnReference:
+              columnCounter: 5190f271-cdc7-47f8-8e25-9394aec5e875
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: Q1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6a050da0-0e85-449d-871c-40e14292b828
+                    stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+                transform: ""
+          - columnReference:
+              columnCounter: bfd9457b-8240-45bc-846b-96723cd57956
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: Q2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 65b31183-20f5-4366-a6ce-434d97285fd1
+                    stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+                transform: ""
+          - columnReference:
+              columnCounter: 45f1d328-733d-4ed5-85d0-01fd5ec89caa
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: Q3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 62bde608-3f39-45d1-a4a3-b40688e5f169
+                    stepCounter: c1da2b91-6cb6-4452-af92-49b9872674d4
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3937709d-03e0-4aaa-89e9-3483d8c97d1c
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            is_system_ldts: true
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: SYSDATE()
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5449035a-bb77-4edb-a8a9-20a39421eabb
+              stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: The Record Source (RSRC) describes the source of this data.
+            is_system_rsrc: true
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "{{record_source()}}"
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              KAGGLE_CONSTRUCTOR: 429b5942-8c50-4a75-b742-878a68c6a9e6
+              KAGGLE_DRIVER: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+              KAGGLE_QUALIFYING: c1da2b91-6cb6-4452-af92-49b9872674d4
+              KAGGLE_RACES: ba82fb32-85b1-4bf2-8ef5-f172c2b54d45
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: KAGGLE_CONSTRUCTOR
+              - locationName: WORK
+                nodeName: KAGGLE_DRIVER
+              - locationName: WORK
+                nodeName: KAGGLE_QUALIFYING
+              - locationName: WORK
+                nodeName: KAGGLE_RACES
+            join:
+              joinCondition: |-
+                FROM {{ ref('WORK', 'KAGGLE_QUALIFYING') }} "KAGGLE_QUALIFYING"
+                INNER JOIN {{ ref('WORK', 'KAGGLE_RACES') }} "KAGGLE_RACES"
+                ON "KAGGLE_QUALIFYING"."RACEID" = "KAGGLE_RACES"."RACEID"
+                INNER JOIN {{ ref('WORK', 'KAGGLE_DRIVER') }} "KAGGLE_DRIVER"
+                ON "KAGGLE_QUALIFYING"."DRIVERID" = "KAGGLE_DRIVER"."DRIVERID"
+                INNER JOIN {{ ref('WORK', 'KAGGLE_CONSTRUCTOR') }} "KAGGLE_CONSTRUCTOR"
+                ON "KAGGLE_QUALIFYING"."CONSTRUCTORID" = "KAGGLE_CONSTRUCTOR"."CONSTRUCTORID"
+            name: DVSTG_QUALIFYING
+            noLinkRefs: []
+      name: DVSTG_QUALIFYING
+      overrideSQL: false
+      schema: ""
+      sqlType: "4"
+      type: sql
+    stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2

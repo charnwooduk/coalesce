@@ -1,0 +1,262 @@
+steps:
+  SATV0_SPRINT_RESULTS-ed1d2f9b-cc59-484b-b322-6f64df0f4c26:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 993fae3b-b4bc-45ac-8eda-24354c532049
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            config:
+              is_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_ALL_RESULTS_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 225610ae-2efe-494c-8988-dfdaa2a56e91
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: 969345d5-ba1d-48fc-8a99-31908fc96e34
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            config:
+              is_hd: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_SPRINT_RESULT_N_S
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1b9e2211-3db6-423a-ac5e-2d491a812eb0
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: c56ee5f4-ba5a-4f6d-a155-415a37b30e53
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 03232f76-2e93-4925-9d9e-55ed78e15ab7
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: 78c3247b-fd50-46ea-9cc3-2757e0b4fe1e
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: GRID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 75d51dd8-eda6-4853-88c4-a0714e7278e1
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: a5297b0c-85a5-4d44-9b2e-4a692654d577
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POSITION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 895b5c55-efd9-42ff-9170-9e46538e4841
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: e68158df-f98d-4766-8e78-f409f4a918c3
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POSITIONTEXT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5de2849e-edcd-4174-a8e0-de65b42beca4
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: 3d5f95b6-bcd6-443e-b70a-6bed2c32bd22
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POSITIONORDER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1b57ad1b-4d88-41a9-ab9c-08b456fb951e
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: b39937a2-173d-4b95-900c-8e6af4a521a6
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: NUMERIC(3,1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POINTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b9ad0e33-3171-4fde-8c3d-c967cbc3f6ef
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: 82dd8f7e-c9f1-4428-b919-4eba1d7b340e
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAPS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 19f2ed20-aed0-40c3-bc99-c2d022def259
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: 4e7dfc59-1a9d-4927-80dc-d0ac0db21d58
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SPRINT_RESULT_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5e0dc997-6d53-469c-b89d-6dc0f2e667e5
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: 60b44b2f-b764-4d11-bac0-e639c7ea09cc
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MILLISECONDS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: af49b53a-f4df-456f-ac8f-35199c556684
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: db7eadf3-c2f8-4e71-9df4-0c346079b9c5
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FASTESTLAP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3bfc46c3-2650-4220-a467-37375a4442bb
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: bd534f9d-4a15-4a67-a43a-c8347314e6f7
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FASTESTLAPTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 56039d12-5e1b-4ea8-b8a2-03e1093a0381
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: e5964974-a4c9-46fa-855a-3e94d2638e98
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STATUS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e799889e-0b54-49d3-a211-a4970eefc7a4
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: cc6337e3-2155-4283-9e8a-3d132064a80b
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 122483e7-847c-4313-874d-f424c11e8e78
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+          - columnReference:
+              columnCounter: 84076d77-4574-4e0f-a50f-b3e0c21cfa14
+              stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c51c88a9-ce61-4927-ae00-d43854f5ec68
+                    stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_SPRINT_RESULTS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_SPRINT_RESULTS') }} "DVSTG_SPRINT_RESULTS"
+            name: SATV0_SPRINT_RESULTS
+            noLinkRefs: []
+      name: SATV0_SPRINT_RESULTS
+      overrideSQL: false
+      schema: ""
+      sqlType: "8"
+      type: sql
+    stepCounter: ed1d2f9b-cc59-484b-b322-6f64df0f4c26

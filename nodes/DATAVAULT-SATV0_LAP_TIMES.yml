@@ -1,0 +1,136 @@
+steps:
+  SATV0_LAP_TIMES-5bfdc465-8926-49d5-a3c9-d44d468cb826:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 09ca489a-2727-444f-bb80-0ae032d301ec
+              stepCounter: 5bfdc465-8926-49d5-a3c9-d44d468cb826
+            config:
+              is_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_LAP_PIT_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 39d253e0-6dff-4a35-a288-72134b8c7702
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
+                transform: ""
+          - columnReference:
+              columnCounter: cbabcf1c-415e-4208-92e6-9cf11b56a25f
+              stepCounter: 5bfdc465-8926-49d5-a3c9-d44d468cb826
+            config:
+              is_hd: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_LAP_N_S
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2c881a50-cde3-457a-85b8-05017b58715a
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
+                transform: ""
+          - columnReference:
+              columnCounter: 2431f0ba-28d1-44e2-a339-dab14d2c6128
+              stepCounter: 5bfdc465-8926-49d5-a3c9-d44d468cb826
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POSITION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5fe7c7b1-7fe2-4d67-885c-09a60f9a1e6b
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
+                transform: ""
+          - columnReference:
+              columnCounter: 9686b23e-8e22-4040-a5d8-703483ae3e6f
+              stepCounter: 5bfdc465-8926-49d5-a3c9-d44d468cb826
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAP_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 226e65cc-57f0-4455-b568-06a588fd9e67
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
+                transform: ""
+          - columnReference:
+              columnCounter: f0129574-1701-4647-8439-a4d5d4e19443
+              stepCounter: 5bfdc465-8926-49d5-a3c9-d44d468cb826
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MILLISECONDS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1f63b639-b627-4c61-ad6e-93e704ebfaa5
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
+                transform: ""
+          - columnReference:
+              columnCounter: c09e18ae-38d9-4112-a1ea-ff4bcc932e89
+              stepCounter: 5bfdc465-8926-49d5-a3c9-d44d468cb826
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 29df8636-905a-4903-8e2a-8c7e35c781d5
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
+                transform: ""
+          - columnReference:
+              columnCounter: 0826cf49-90f6-45bf-8fd6-f5dbaa49d823
+              stepCounter: 5bfdc465-8926-49d5-a3c9-d44d468cb826
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4d9ecbb5-417b-41c9-bb17-e1f8feba6300
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_LAP_TIMES
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_LAP_TIMES') }} "DVSTG_LAP_TIMES"
+            name: SATV0_LAP_TIMES
+            noLinkRefs: []
+      name: SATV0_LAP_TIMES
+      overrideSQL: false
+      schema: ""
+      sqlType: "8"
+      type: sql
+    stepCounter: 5bfdc465-8926-49d5-a3c9-d44d468cb826

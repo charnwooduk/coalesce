@@ -81,6 +81,8 @@ steps:
                 stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
               - columnCounter: 974bb5f0-cf05-4703-8dc6-ac409e3ff8c0
                 stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+              - columnCounter: 6da352b2-c30b-4560-bf79-7a7d3f1301d2
+                stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
             name: HD_RESULTS_N_S
             nullable: true
             sourceColumnReferences: []

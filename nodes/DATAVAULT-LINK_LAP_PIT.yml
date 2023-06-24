@@ -1,5 +1,5 @@
 steps:
-  LINK_ALL_RESULTS-7809fb3d-5a00-44bb-bfe0-ad5b5e386731:
+  LINK_LAP_PIT-967a5eaa-66fa-4a78-9840-401424e86c03:
     operation:
       config:
         postSQL: ""
@@ -15,38 +15,36 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 082f6ebd-4bcf-4a5b-86a8-98cbdb65f937
-              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+              columnCounter: ce9efa5d-c1c4-4e70-84d4-c860f6d203af
+              stepCounter: 967a5eaa-66fa-4a78-9840-401424e86c03
             config:
               is_Link_hk: true
             dataType: STRING
             description: ""
             hashColumns: []
             hashDetails: null
-            name: HK_ALL_RESULTS_H
+            name: HK_LAP_PIT_H
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 15b523f2-00d8-4451-9636-79fb2efd2390
-                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                  - columnCounter: 39d253e0-6dff-4a35-a288-72134b8c7702
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
                 transform: ""
           - columnReference:
-              columnCounter: c3d87e8c-1533-4576-971d-5778d6951540
-              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+              columnCounter: d0d1478e-0781-4c01-873d-4106f6687028
+              stepCounter: 967a5eaa-66fa-4a78-9840-401424e86c03
             dataType: STRING
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: HK_RACE_H
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: d75ff47a-3391-4649-badd-78b3f1952ebd
-                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                  - columnCounter: 25e9163e-e511-45a8-9703-4e26e9415c02
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
                 transform: ""
           - columnReference:
-              columnCounter: 74d96f83-0030-4b90-9c5c-a8dfe416348d
-              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+              columnCounter: 2124b9d9-b8bd-42eb-9658-2010d702c3c9
+              stepCounter: 967a5eaa-66fa-4a78-9840-401424e86c03
             dataType: STRING
             description: ""
             hashColumns: []
@@ -55,74 +53,74 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: ac020824-a35b-4490-82c3-bcc2cc55fcc7
-                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                  - columnCounter: 04302c45-2cc1-4e90-8dfd-42fcdf507607
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
                 transform: ""
           - columnReference:
-              columnCounter: 1c55e7d9-9100-433f-8f5d-98e7fbd663db
-              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+              columnCounter: 888852eb-122e-478f-8b2e-1e0b1f2b1692
+              stepCounter: 967a5eaa-66fa-4a78-9840-401424e86c03
             dataType: STRING
             description: ""
             hashColumns: []
             hashDetails: null
-            name: HK_CONSTRUCTOR_H
+            name: HK_LAP_H
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 661bc4d3-881e-4270-9801-fcb5d8b7dd76
-                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                  - columnCounter: 1686bf65-a30f-4ef0-a8c2-b86a5768d2b2
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
                 transform: ""
           - columnReference:
-              columnCounter: 2f5bab8a-8691-4513-afe8-b24d0e683c79
-              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+              columnCounter: 46c69569-396d-4bbf-9787-68146e7d4fe7
+              stepCounter: 967a5eaa-66fa-4a78-9840-401424e86c03
             dataType: INT
             description: ""
             name: RACE_YEAR
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b822b4a3-ed61-4e23-af2b-95b90c4a6377
-                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                  - columnCounter: ee2c6bf4-83bc-4c74-a33b-e1332086f106
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
                 transform: ""
           - columnReference:
-              columnCounter: 175587c4-a233-406b-b810-e8e926673aeb
-              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+              columnCounter: f12b5b80-9051-47d8-80a4-d2fca5f064d1
+              stepCounter: 967a5eaa-66fa-4a78-9840-401424e86c03
             dataType: INT
             description: ""
             name: ROUND
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 051dc47f-531c-4403-8d6d-ba12f19bf67d
-                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                  - columnCounter: 86aac578-bd15-45b7-ae16-e29527d4d915
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
                 transform: ""
           - columnReference:
-              columnCounter: 2c024069-9277-423e-b1d9-38a9b1d59c7f
-              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+              columnCounter: 8db03e95-d36d-4592-8e15-3aa87ae3aa06
+              stepCounter: 967a5eaa-66fa-4a78-9840-401424e86c03
             dataType: VARCHAR(50)
             description: ""
             name: DRIVERREF
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 734f5141-85c8-4afd-8085-1d4b0dbccf92
-                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                  - columnCounter: a52d67c1-fc32-4270-8ee0-9463274854e3
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
                 transform: ""
           - columnReference:
-              columnCounter: b13f8f30-861d-4763-b561-4b8ebd3091ab
-              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
-            dataType: VARCHAR(50)
+              columnCounter: 8d94d59c-eb21-4fdb-a811-6bbe1b6d16a6
+              stepCounter: 967a5eaa-66fa-4a78-9840-401424e86c03
+            dataType: INT
             description: ""
-            name: CONSTRUCTORREF
+            name: LAP
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: cd04e583-fa4b-4fc4-ac8b-8c7e83e78a8e
-                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                  - columnCounter: 93e8f5ef-829c-410d-917b-f61ddf7e1db2
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
                 transform: ""
           - columnReference:
-              columnCounter: 7b9508a0-65da-4f30-a9ea-4496993bf87f
-              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+              columnCounter: 2e873fd5-7b1d-473f-a105-735900aa38f9
+              stepCounter: 967a5eaa-66fa-4a78-9840-401424e86c03
             dataType: TIMESTAMP
             description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
             hashColumns: []
@@ -131,12 +129,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 95b2f776-dc2e-4f1e-9c8e-bf15f2c6f61a
-                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                  - columnCounter: 29df8636-905a-4903-8e2a-8c7e35c781d5
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
                 transform: ""
           - columnReference:
-              columnCounter: a13fca4d-fbde-4366-aeed-09cd3ab62ab6
-              stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+              columnCounter: ca650c18-95ff-46f1-87ae-880c476ab3cd
+              stepCounter: 967a5eaa-66fa-4a78-9840-401424e86c03
             dataType: STRING
             description: The Record Source (RSRC) describes the source of this data.
             hashColumns: []
@@ -145,8 +143,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 29b34b46-b4dc-4ac3-a652-7ea260e8bb40
-                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                  - columnCounter: 4d9ecbb5-417b-41c9-bb17-e1f8feba6300
+                    stepCounter: abb47eba-bb8a-49c7-91ba-fcd0e80b7404
                 transform: ""
         cteString: ""
         enabledColumnTestIDs: []
@@ -155,14 +153,14 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: WORK
-                nodeName: DVSTG_RESULTS
+                nodeName: DVSTG_LAP_TIMES
             join:
-              joinCondition: FROM {{ ref('WORK', 'DVSTG_RESULTS') }} "DVSTG_RESULTS"
-            name: LINK_ALL_RESULTS
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_LAP_TIMES') }} "DVSTG_LAP_TIMES"
+            name: LINK_LAP_PIT
             noLinkRefs: []
-      name: LINK_ALL_RESULTS
+      name: LINK_LAP_PIT
       overrideSQL: false
       schema: ""
       sqlType: "7"
       type: sql
-    stepCounter: 7809fb3d-5a00-44bb-bfe0-ad5b5e386731
+    stepCounter: 967a5eaa-66fa-4a78-9840-401424e86c03

@@ -229,6 +229,18 @@ steps:
                     stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
                 transform: ""
           - columnReference:
+              columnCounter: 04eaae12-6692-47d4-b8e1-430ae6a06a6f
+              stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
+            dataType: VARCHAR(50)
+            description: ""
+            name: STATUS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6da352b2-c30b-4560-bf79-7a7d3f1301d2
+                    stepCounter: 760cdea0-d194-4dcc-a908-c976653a8a10
+                transform: ""
+          - columnReference:
               columnCounter: b28e6a12-27b1-4e49-8436-7941edf2bb38
               stepCounter: 69e8cf69-5cf4-4258-bdcf-fe775ae8f4b6
             dataType: TIMESTAMP

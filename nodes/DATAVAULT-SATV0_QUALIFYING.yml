@@ -1,0 +1,166 @@
+steps:
+  SATV0_QUALIFYING-64e1bf00-7ce1-4cd4-9c08-f7b779a0adc7:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: aa69de95-c8a4-49d1-afe4-5534f4264263
+              stepCounter: 64e1bf00-7ce1-4cd4-9c08-f7b779a0adc7
+            config:
+              is_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_ALL_RESULTS_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c790dcea-9bcb-489e-9b3f-a00bb98dbbf6
+                    stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+                transform: ""
+          - columnReference:
+              columnCounter: c9357adc-fa68-44f5-9c33-8469d864f2c4
+              stepCounter: 64e1bf00-7ce1-4cd4-9c08-f7b779a0adc7
+            config:
+              is_hd: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_QUALIFYING_RESULTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7227d3af-b42e-4420-bbb7-3520cc15d521
+                    stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+                transform: ""
+          - columnReference:
+              columnCounter: 47fb2eae-65d0-462d-967c-a987c9ea728d
+              stepCounter: 64e1bf00-7ce1-4cd4-9c08-f7b779a0adc7
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d0670660-a131-4214-81c7-54c3e56c56ac
+                    stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+                transform: ""
+          - columnReference:
+              columnCounter: a21ecb8a-69cb-40e9-9245-9e13dfdeb3b0
+              stepCounter: 64e1bf00-7ce1-4cd4-9c08-f7b779a0adc7
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POSITION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e3894ebc-a894-4add-bdb2-ef4fb1e9d803
+                    stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+                transform: ""
+          - columnReference:
+              columnCounter: 404eb2ab-1505-4cd6-9b75-5fb525b55911
+              stepCounter: 64e1bf00-7ce1-4cd4-9c08-f7b779a0adc7
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: Q1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5190f271-cdc7-47f8-8e25-9394aec5e875
+                    stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+                transform: ""
+          - columnReference:
+              columnCounter: b67acd20-8c69-4e63-ab59-c86a55752ecd
+              stepCounter: 64e1bf00-7ce1-4cd4-9c08-f7b779a0adc7
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: Q2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: bfd9457b-8240-45bc-846b-96723cd57956
+                    stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+                transform: ""
+          - columnReference:
+              columnCounter: e973f155-2c4b-41b3-9e43-dea526dd64b8
+              stepCounter: 64e1bf00-7ce1-4cd4-9c08-f7b779a0adc7
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: Q3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 45f1d328-733d-4ed5-85d0-01fd5ec89caa
+                    stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+                transform: ""
+          - columnReference:
+              columnCounter: b3f7d130-05b3-4fb4-937a-1d0067348b3a
+              stepCounter: 64e1bf00-7ce1-4cd4-9c08-f7b779a0adc7
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3937709d-03e0-4aaa-89e9-3483d8c97d1c
+                    stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+                transform: ""
+          - columnReference:
+              columnCounter: d495d30e-d7db-49f1-b7cd-91f0d08761b6
+              stepCounter: 64e1bf00-7ce1-4cd4-9c08-f7b779a0adc7
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5449035a-bb77-4edb-a8a9-20a39421eabb
+                    stepCounter: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              DVSTG_QUALIFYING: 3087c85c-00c7-40cf-a982-85cee54fcfe2
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_QUALIFYING
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_QUALIFYING') }} "DVSTG_QUALIFYING"
+            name: SATV0_QUALIFYING
+            noLinkRefs: []
+      name: SATV0_QUALIFYING
+      overrideSQL: false
+      schema: ""
+      sqlType: "8"
+      type: sql
+    stepCounter: 64e1bf00-7ce1-4cd4-9c08-f7b779a0adc7

@@ -1,0 +1,150 @@
+steps:
+  SATV0_PIT_STOPS-ca386642-346f-4b87-a6b0-11e7f631aa8d:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DATAVAULT
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 144da1d4-6eaf-4264-b933-c5ab28ea1c91
+              stepCounter: ca386642-346f-4b87-a6b0-11e7f631aa8d
+            config:
+              is_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_LAP_PIT_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c84c1ca0-2ca3-470e-9af5-31d1e7288c9a
+                    stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+                transform: ""
+          - columnReference:
+              columnCounter: e959e68a-2ede-4c55-aa78-15a832645a82
+              stepCounter: ca386642-346f-4b87-a6b0-11e7f631aa8d
+            config:
+              is_hd: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_PIT_STOP_N_S
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: bdb3cff0-1ebb-47ea-a6ab-c45fbccaf1b5
+                    stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+                transform: ""
+          - columnReference:
+              columnCounter: 74cdccd7-518a-41d2-820a-b8b2f1159f5c
+              stepCounter: ca386642-346f-4b87-a6b0-11e7f631aa8d
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STOP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4550f716-3ace-4dea-b9f6-2fbd068c2b1f
+                    stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+                transform: ""
+          - columnReference:
+              columnCounter: 87341948-6e32-4a8d-b4b6-0eba348ee5d3
+              stepCounter: ca386642-346f-4b87-a6b0-11e7f631aa8d
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PIT_STOP_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8046dcf3-1917-4b4e-801b-c199bc816ca1
+                    stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+                transform: ""
+          - columnReference:
+              columnCounter: ac845fd1-a3ac-4d66-bc08-f5f8a62020dc
+              stepCounter: ca386642-346f-4b87-a6b0-11e7f631aa8d
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DURATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 23826203-4cf0-445e-a2db-4d03d31f7517
+                    stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+                transform: ""
+          - columnReference:
+              columnCounter: b3a2df9a-eb60-4c98-a98e-2b783be01990
+              stepCounter: ca386642-346f-4b87-a6b0-11e7f631aa8d
+            dataType: INT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MILLISECONDS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4e4f791c-1bee-424e-aa08-ec49deee2afd
+                    stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+                transform: ""
+          - columnReference:
+              columnCounter: 795cb3d1-c9e8-415c-9099-4422a42b41df
+              stepCounter: ca386642-346f-4b87-a6b0-11e7f631aa8d
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b484f9cb-1f68-46d1-86a1-068988e9649e
+                    stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+                transform: ""
+          - columnReference:
+              columnCounter: bb6d6110-fcf0-4962-9148-5e39fb2fe3d1
+              stepCounter: ca386642-346f-4b87-a6b0-11e7f631aa8d
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c642d53d-5738-4103-9a67-aa14857b13dc
+                    stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: DVSTG_PIT_STOPS
+            join:
+              joinCondition: FROM {{ ref('WORK', 'DVSTG_PIT_STOPS') }} "DVSTG_PIT_STOPS"
+            name: SATV0_PIT_STOPS
+            noLinkRefs: []
+      name: SATV0_PIT_STOPS
+      overrideSQL: false
+      schema: ""
+      sqlType: "8"
+      type: sql
+    stepCounter: ca386642-346f-4b87-a6b0-11e7f631aa8d

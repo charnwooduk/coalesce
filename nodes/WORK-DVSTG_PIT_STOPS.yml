@@ -1,0 +1,253 @@
+steps:
+  DVSTG_PIT_STOPS-e1fd04f7-eb80-49be-b1ee-60611976d4ab:
+    operation:
+      config:
+        generate_ghost_records: true
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: WORK
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c84c1ca0-2ca3-470e-9af5-31d1e7288c9a
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 120e7815-150c-4bcd-b3b4-37273b62745a
+                stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+              - columnCounter: cf4d8ee0-a960-48c0-9526-744017e5c138
+                stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+              - columnCounter: 18a91db8-5358-420a-9667-d2e5135588d2
+                stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+              - columnCounter: 989a4800-68d0-417b-8a0c-ab8f5a3167aa
+                stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            name: HK_LAP_PIT_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: bdb3cff0-1ebb-47ea-a6ab-c45fbccaf1b5
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 4550f716-3ace-4dea-b9f6-2fbd068c2b1f
+                stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+              - columnCounter: 8046dcf3-1917-4b4e-801b-c199bc816ca1
+                stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+              - columnCounter: 23826203-4cf0-445e-a2db-4d03d31f7517
+                stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+              - columnCounter: 4e4f791c-1bee-424e-aa08-ec49deee2afd
+                stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            name: HD_PIT_STOP_N_S
+            nullable: true
+            sourceColumnReferences: []
+          - columnReference:
+              columnCounter: 89ae68bf-d380-417a-9ea0-e9d5fbfa7b24
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            dataType: INT
+            description: ""
+            name: RACEID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9fa2547f-8cc4-4853-a721-c01969603fa4
+                    stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+                transform: ""
+          - columnReference:
+              columnCounter: 120e7815-150c-4bcd-b3b4-37273b62745a
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            dataType: INT
+            description: ""
+            name: RACE_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d958f7aa-3926-43bb-a9d5-6776cb194201
+                    stepCounter: ba82fb32-85b1-4bf2-8ef5-f172c2b54d45
+                transform: ""
+          - columnReference:
+              columnCounter: cf4d8ee0-a960-48c0-9526-744017e5c138
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            dataType: INT
+            description: ""
+            name: ROUND
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d9876a56-6e64-472c-8a34-03d87eac816d
+                    stepCounter: ba82fb32-85b1-4bf2-8ef5-f172c2b54d45
+                transform: ""
+          - columnReference:
+              columnCounter: 6098e455-53e8-4d51-bff5-581b90667640
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            dataType: INT
+            description: ""
+            name: DRIVERID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 08fe378a-3dd5-43fc-8503-09068468e299
+                    stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+                transform: ""
+          - columnReference:
+              columnCounter: 18a91db8-5358-420a-9667-d2e5135588d2
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            dataType: VARCHAR(50)
+            description: ""
+            name: DRIVERREF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a097dfdf-41c6-4298-b714-7425e4f18ce0
+                    stepCounter: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+                transform: ""
+          - columnReference:
+              columnCounter: 989a4800-68d0-417b-8a0c-ab8f5a3167aa
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            dataType: INT
+            description: ""
+            name: LAP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4240d01c-30e6-4f6a-a51d-3757079de114
+                    stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+                transform: ""
+          - columnReference:
+              columnCounter: 4550f716-3ace-4dea-b9f6-2fbd068c2b1f
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            dataType: INT
+            description: ""
+            name: STOP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0319b113-29a2-4bdb-9319-d52214f1bb77
+                    stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+                transform: ""
+          - columnReference:
+              columnCounter: 8046dcf3-1917-4b4e-801b-c199bc816ca1
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            dataType: VARCHAR(20)
+            description: ""
+            name: PIT_STOP_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e02c448c-939e-4a63-a137-597c0f870209
+                    stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+                transform: ""
+          - columnReference:
+              columnCounter: 23826203-4cf0-445e-a2db-4d03d31f7517
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            dataType: NUMERIC(20)
+            description: ""
+            name: DURATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e1d3ccda-2165-435d-a486-584eadd516cc
+                    stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+                transform: ""
+          - columnReference:
+              columnCounter: 4e4f791c-1bee-424e-aa08-ec49deee2afd
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            dataType: INT
+            description: ""
+            name: MILLISECONDS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 188ed5ac-3659-4f40-bb29-041eb9d9ff00
+                    stepCounter: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b484f9cb-1f68-46d1-86a1-068988e9649e
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            is_system_ldts: true
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: SYSDATE()
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c642d53d-5738-4103-9a67-aa14857b13dc
+              stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: The Record Source (RSRC) describes the source of this data.
+            is_system_rsrc: true
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "{{record_source()}}"
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              KAGGLE_DRIVER: d663d018-5c05-4b77-b3fa-9b5b72ef18e3
+              KAGGLE_PIT_STOPS: c9cc92d1-2d2b-49b0-a74f-43ebb8786ea4
+              KAGGLE_RACES: ba82fb32-85b1-4bf2-8ef5-f172c2b54d45
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: KAGGLE_DRIVER
+              - locationName: WORK
+                nodeName: KAGGLE_PIT_STOPS
+              - locationName: WORK
+                nodeName: KAGGLE_RACES
+            join:
+              joinCondition: |-
+                FROM {{ ref('WORK', 'KAGGLE_PIT_STOPS') }} "KAGGLE_PIT_STOPS"
+                INNER JOIN {{ ref('WORK', 'KAGGLE_RACES') }} "KAGGLE_RACES"
+                ON "KAGGLE_PIT_STOPS"."RACEID" = "KAGGLE_RACES"."RACEID"
+                INNER JOIN {{ ref('WORK', 'KAGGLE_DRIVER') }} "KAGGLE_DRIVER"
+                ON "KAGGLE_PIT_STOPS"."DRIVERID" = "KAGGLE_DRIVER"."DRIVERID"
+            name: DVSTG_PIT_STOPS
+            noLinkRefs: []
+      name: DVSTG_PIT_STOPS
+      overrideSQL: false
+      schema: ""
+      sqlType: "4"
+      type: sql
+    stepCounter: e1fd04f7-eb80-49be-b1ee-60611976d4ab

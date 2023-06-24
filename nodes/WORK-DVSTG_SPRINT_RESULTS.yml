@@ -102,7 +102,7 @@ steps:
             hashDetails:
               hashAlgorithm: SHA1
             hashedColumns:
-              - columnCounter: e2dfa532-b60a-4083-9e8f-1290c226acc1
+              - columnCounter: a1397cad-255f-41a6-ad86-ca1f1e1180aa
                 stepCounter: 8f22017f-adea-420d-884e-91efbf275082
               - columnCounter: fabc272d-5a51-4a0b-9bf8-0e9cb12ce9c1
                 stepCounter: 8f22017f-adea-420d-884e-91efbf275082
@@ -147,25 +147,6 @@ steps:
             name: HK_CONSTRUCTOR_H
             nullable: true
             sourceColumnReferences: []
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 9aac438d-6d30-4b79-9dd3-823ea557d4da
-              stepCounter: 8f22017f-adea-420d-884e-91efbf275082
-            config: {}
-            dataType: STRING
-            defaultValue: ""
-            description: ""
-            hashDetails:
-              hashAlgorithm: SHA1
-            hashedColumns:
-              - columnCounter: e799889e-0b54-49d3-a211-a4970eefc7a4
-                stepCounter: 8f22017f-adea-420d-884e-91efbf275082
-            name: HK_STATUS_H
-            nullable: true
-            sourceColumnReferences: []
           - columnReference:
               columnCounter: 52a2ea0c-858c-480a-b87d-8982ccab8b53
               stepCounter: 8f22017f-adea-420d-884e-91efbf275082
@@ -191,18 +172,6 @@ steps:
                     stepCounter: 77f3a5e7-42c4-494d-8113-d63ea604a1bc
                 transform: ""
           - columnReference:
-              columnCounter: fabc272d-5a51-4a0b-9bf8-0e9cb12ce9c1
-              stepCounter: 8f22017f-adea-420d-884e-91efbf275082
-            dataType: INT
-            description: ""
-            name: ROUND
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: d9876a56-6e64-472c-8a34-03d87eac816d
-                    stepCounter: ba82fb32-85b1-4bf2-8ef5-f172c2b54d45
-                transform: ""
-          - columnReference:
               columnCounter: a1397cad-255f-41a6-ad86-ca1f1e1180aa
               stepCounter: 8f22017f-adea-420d-884e-91efbf275082
             dataType: INT
@@ -212,6 +181,18 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: d958f7aa-3926-43bb-a9d5-6776cb194201
+                    stepCounter: ba82fb32-85b1-4bf2-8ef5-f172c2b54d45
+                transform: ""
+          - columnReference:
+              columnCounter: fabc272d-5a51-4a0b-9bf8-0e9cb12ce9c1
+              stepCounter: 8f22017f-adea-420d-884e-91efbf275082
+            dataType: INT
+            description: ""
+            name: ROUND
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d9876a56-6e64-472c-8a34-03d87eac816d
                     stepCounter: ba82fb32-85b1-4bf2-8ef5-f172c2b54d45
                 transform: ""
           - columnReference:
